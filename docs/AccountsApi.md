@@ -1,4 +1,4 @@
-# yodlee_client.AccountsApi
+# yodlee.AccountsApi
 
 All URIs are relative to *https://localhost*
 
@@ -26,13 +26,13 @@ The add account service is used to add manual accounts.<br>The response of add a
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.AccountsApi()
-account_param = yodlee_client.CreateAccountRequest() # CreateAccountRequest | accountParam
+api_instance = yodlee.AccountsApi()
+account_param = yodlee.CreateAccountRequest() # CreateAccountRequest | accountParam
 
 try:
     # Add Manual Account
@@ -74,12 +74,12 @@ The delete account service allows an account to be deleted.<br>This service does
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.AccountsApi()
+api_instance = yodlee.AccountsApi()
 account_id = 789 # int | accountId
 
 try:
@@ -121,13 +121,13 @@ Use this service to validate the address before adding the real estate account.<
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.AccountsApi()
-address_param = yodlee_client.EvaluateAddressRequest() # EvaluateAddressRequest | addressParam
+api_instance = yodlee.AccountsApi()
+address_param = yodlee.EvaluateAddressRequest() # EvaluateAddressRequest | addressParam
 
 try:
     # Evaluate Address
@@ -169,12 +169,12 @@ The get account details service provides detailed information of an account.<br>
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.AccountsApi()
+api_instance = yodlee.AccountsApi()
 account_id = 789 # int | accountId
 include = 'include_example' # str | profile, holder, fullAccountNumber, fullAccountNumberList, paymentProfile, autoRefresh<br><b>Note:</b>fullAccountNumber is deprecated and is replaced with fullAccountNumberList in include parameter and response. (optional)
 
@@ -219,12 +219,12 @@ The get accounts service provides information about accounts added by the user.<
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.AccountsApi()
+api_instance = yodlee.AccountsApi()
 account_id = 'account_id_example' # str | Comma separated accountIds. (optional)
 container = 'container_example' # str | bank/creditCard/investment/insurance/loan/reward/bill/realEstate/otherAssets/otherLiabilities (optional)
 include = 'include_example' # str | profile, holder, fullAccountNumber, fullAccountNumberList, paymentProfile, autoRefresh<br><b>Note:</b>fullAccountNumber is deprecated and is replaced with fullAccountNumberList in include parameter and response. (optional)
@@ -277,12 +277,12 @@ Yodlee classifies providers into credential-based aggregation and Open Banking (
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.AccountsApi()
+api_instance = yodlee.AccountsApi()
 provider_account_id = 789 # int | providerAccountId
 
 try:
@@ -325,12 +325,12 @@ The historical balances service is used to retrieve the historical balances for 
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.AccountsApi()
+api_instance = yodlee.AccountsApi()
 account_id = 'account_id_example' # str | accountId (optional)
 from_date = 'from_date_example' # str | from date for balance retrieval (YYYY-MM-DD) (optional)
 include_cf = true # bool | Consider carry forward logic for missing balances (optional)
@@ -385,12 +385,12 @@ This service is associated with the open banking (OB) flow.<br>Before invoking t
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.AccountsApi()
+api_instance = yodlee.AccountsApi()
 provider_account_id = 789 # int | providerAccountId
 
 try:
@@ -433,14 +433,14 @@ The update account service is used to update manual and aggregated accounts.<br>
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.AccountsApi()
+api_instance = yodlee.AccountsApi()
 account_id = 789 # int | accountId
-account_request = yodlee_client.UpdateAccountRequest() # UpdateAccountRequest | accountRequest
+account_request = yodlee.UpdateAccountRequest() # UpdateAccountRequest | accountRequest
 
 try:
     # Update Account

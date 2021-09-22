@@ -1,4 +1,4 @@
-# yodlee_client.DataExtractsApi
+# yodlee.DataExtractsApi
 
 All URIs are relative to *https://localhost*
 
@@ -19,12 +19,12 @@ The get extracts events service is used to learn about occurrences of data extra
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.DataExtractsApi()
+api_instance = yodlee.DataExtractsApi()
 event_name = 'event_name_example' # str | Event Name
 from_date = 'from_date_example' # str | From DateTime (YYYY-MM-DDThh:mm:ssZ)
 to_date = 'to_date_example' # str | To DateTime (YYYY-MM-DDThh:mm:ssZ)
@@ -71,12 +71,12 @@ The get user data service is used to get a user's modified data for a particular
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.DataExtractsApi()
+api_instance = yodlee.DataExtractsApi()
 from_date = 'from_date_example' # str | From DateTime (YYYY-MM-DDThh:mm:ssZ)
 login_name = 'login_name_example' # str | Login Name
 to_date = 'to_date_example' # str | To DateTime (YYYY-MM-DDThh:mm:ssZ)

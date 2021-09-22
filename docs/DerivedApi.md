@@ -1,4 +1,4 @@
-# yodlee_client.DerivedApi
+# yodlee.DerivedApi
 
 All URIs are relative to *https://localhost*
 
@@ -20,12 +20,12 @@ The get holding summary service is used to get the summary of asset classificati
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.DerivedApi()
+api_instance = yodlee.DerivedApi()
 account_ids = 'account_ids_example' # str | Comma separated accountIds (optional)
 classification_type = 'classification_type_example' # str | e.g. Country, Sector, etc. (optional)
 include = 'include_example' # str | details (optional)
@@ -72,12 +72,12 @@ The get networth service is used to get the networth for the user.<br>If the inc
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.DerivedApi()
+api_instance = yodlee.DerivedApi()
 account_ids = 'account_ids_example' # str | comma separated accountIds (optional)
 container = 'container_example' # str | bank/creditCard/investment/insurance/loan/realEstate/otherAssets/otherLiabilities (optional)
 from_date = 'from_date_example' # str | from date for balance retrieval (YYYY-MM-DD) (optional)
@@ -134,12 +134,12 @@ The transaction summary service provides the summary values of transactions for 
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.DerivedApi()
+api_instance = yodlee.DerivedApi()
 group_by = 'group_by_example' # str | CATEGORY_TYPE, HIGH_LEVEL_CATEGORY or CATEGORY
 account_id = 'account_id_example' # str | comma separated account Ids (optional)
 category_id = 'category_id_example' # str | comma separated categoryIds (optional)

@@ -1,4 +1,4 @@
-# yodlee_client.AuthApi
+# yodlee.AuthApi
 
 All URIs are relative to *https://localhost*
 
@@ -22,12 +22,12 @@ This endpoint allows an existing API key to be deleted.<br>You can use one of th
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.AuthApi()
+api_instance = yodlee.AuthApi()
 key = 'key_example' # str | key
 
 try:
@@ -69,12 +69,12 @@ This endpoint revokes the token passed in the Authorization header. This service
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.AuthApi()
+api_instance = yodlee.AuthApi()
 
 try:
     # Delete Token
@@ -112,12 +112,12 @@ Generate Access Token
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.AuthApi()
+api_instance = yodlee.AuthApi()
 client_id = 'client_id_example' # str | clientId issued by Yodlee is used to generate the OAuth token for authentication. (optional)
 secret = 'secret_example' # str | secret issued by Yodlee is used to generate the OAuth token for authentication. (optional)
 
@@ -162,13 +162,13 @@ This endpoint is used to generate an API key. The RSA public key you provide sho
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.AuthApi()
-api_key_request = yodlee_client.ApiKeyRequest() # ApiKeyRequest | apiKeyRequest
+api_instance = yodlee.AuthApi()
+api_key_request = yodlee.ApiKeyRequest() # ApiKeyRequest | apiKeyRequest
 
 try:
     # Generate API Key
@@ -210,12 +210,12 @@ This endpoint provides the list of API keys that exist for a customer.<br>You ca
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.AuthApi()
+api_instance = yodlee.AuthApi()
 
 try:
     # Get API Keys

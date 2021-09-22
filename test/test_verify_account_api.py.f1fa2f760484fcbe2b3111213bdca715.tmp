@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.api.verify_account_api import VerifyAccountApi  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.api.verify_account_api import VerifyAccountApi  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestVerifyAccountApi(unittest.TestCase):
     """VerifyAccountApi unit test stubs"""
 
     def setUp(self):
-        self.api = yodlee_client.api.verify_account_api.VerifyAccountApi()  # noqa: E501
+        self.api = yodlee.api.verify_account_api.VerifyAccountApi()  # noqa: E501
 
     def tearDown(self):
         pass

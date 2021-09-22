@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.create_cobrand_notification_event import CreateCobrandNotificationEvent  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.create_cobrand_notification_event import CreateCobrandNotificationEvent  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestCreateCobrandNotificationEvent(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCreateCobrandNotificationEvent(unittest.TestCase):
     def testCreateCobrandNotificationEvent(self):
         """Test CreateCobrandNotificationEvent"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.create_cobrand_notification_event.CreateCobrandNotificationEvent()  # noqa: E501
+        # model = yodlee.models.create_cobrand_notification_event.CreateCobrandNotificationEvent()  # noqa: E501
         pass
 
 

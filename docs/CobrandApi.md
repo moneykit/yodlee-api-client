@@ -1,4 +1,4 @@
-# yodlee_client.CobrandApi
+# yodlee.CobrandApi
 
 All URIs are relative to *https://localhost*
 
@@ -24,13 +24,13 @@ The cobrand login service authenticates a cobrand.<br>Cobrand session in the res
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.CobrandApi()
-cobrand_login_request = yodlee_client.CobrandLoginRequest() # CobrandLoginRequest | cobrandLoginRequest
+api_instance = yodlee.CobrandApi()
+cobrand_login_request = yodlee.CobrandLoginRequest() # CobrandLoginRequest | cobrandLoginRequest
 
 try:
     # Cobrand Login
@@ -72,12 +72,12 @@ The cobrand logout service is used to log out the cobrand.<br>This service does 
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.CobrandApi()
+api_instance = yodlee.CobrandApi()
 
 try:
     # Cobrand Logout
@@ -115,14 +115,14 @@ Subscribe Event
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.CobrandApi()
+api_instance = yodlee.CobrandApi()
 event_name = 'event_name_example' # str | eventName
-event_request = yodlee_client.CreateCobrandNotificationEventRequest() # CreateCobrandNotificationEventRequest | eventRequest
+event_request = yodlee.CreateCobrandNotificationEventRequest() # CreateCobrandNotificationEventRequest | eventRequest
 
 try:
     # Subscribe Event
@@ -164,12 +164,12 @@ Delete Subscription
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.CobrandApi()
+api_instance = yodlee.CobrandApi()
 event_name = 'event_name_example' # str | eventName
 
 try:
@@ -211,12 +211,12 @@ Get Public Key
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.CobrandApi()
+api_instance = yodlee.CobrandApi()
 
 try:
     # Get Public Key
@@ -255,12 +255,12 @@ Get Subscribed Events
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.CobrandApi()
+api_instance = yodlee.CobrandApi()
 event_name = 'event_name_example' # str | eventName (optional)
 
 try:
@@ -303,14 +303,14 @@ Update Subscription
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.CobrandApi()
+api_instance = yodlee.CobrandApi()
 event_name = 'event_name_example' # str | eventName
-event_request = yodlee_client.UpdateCobrandNotificationEventRequest() # UpdateCobrandNotificationEventRequest | eventRequest
+event_request = yodlee.UpdateCobrandNotificationEventRequest() # UpdateCobrandNotificationEventRequest | eventRequest
 
 try:
     # Update Subscription

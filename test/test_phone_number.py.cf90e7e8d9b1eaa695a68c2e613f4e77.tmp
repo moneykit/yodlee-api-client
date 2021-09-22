@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.phone_number import PhoneNumber  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.phone_number import PhoneNumber  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestPhoneNumber(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestPhoneNumber(unittest.TestCase):
     def testPhoneNumber(self):
         """Test PhoneNumber"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.phone_number.PhoneNumber()  # noqa: E501
+        # model = yodlee.models.phone_number.PhoneNumber()  # noqa: E501
         pass
 
 

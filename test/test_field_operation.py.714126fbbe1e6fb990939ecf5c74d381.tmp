@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.field_operation import FieldOperation  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.field_operation import FieldOperation  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestFieldOperation(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestFieldOperation(unittest.TestCase):
     def testFieldOperation(self):
         """Test FieldOperation"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.field_operation.FieldOperation()  # noqa: E501
+        # model = yodlee.models.field_operation.FieldOperation()  # noqa: E501
         pass
 
 

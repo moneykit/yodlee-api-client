@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.holding_securities_response import HoldingSecuritiesResponse  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.holding_securities_response import HoldingSecuritiesResponse  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestHoldingSecuritiesResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestHoldingSecuritiesResponse(unittest.TestCase):
     def testHoldingSecuritiesResponse(self):
         """Test HoldingSecuritiesResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.holding_securities_response.HoldingSecuritiesResponse()  # noqa: E501
+        # model = yodlee.models.holding_securities_response.HoldingSecuritiesResponse()  # noqa: E501
         pass
 
 

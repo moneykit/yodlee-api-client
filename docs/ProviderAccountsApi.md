@@ -1,4 +1,4 @@
-# yodlee_client.ProviderAccountsApi
+# yodlee.ProviderAccountsApi
 
 All URIs are relative to *https://localhost*
 
@@ -24,12 +24,12 @@ The delete provider account service is used to delete a provider account <br>fro
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ProviderAccountsApi()
+api_instance = yodlee.ProviderAccountsApi()
 provider_account_id = 789 # int | providerAccountId
 
 try:
@@ -71,14 +71,14 @@ Update Account
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ProviderAccountsApi()
+api_instance = yodlee.ProviderAccountsApi()
 provider_account_ids = 'provider_account_ids_example' # str | comma separated providerAccountIds
-provider_account_request = yodlee_client.ProviderAccountRequest() # ProviderAccountRequest | loginForm or field entity (optional)
+provider_account_request = yodlee.ProviderAccountRequest() # ProviderAccountRequest | loginForm or field entity (optional)
 
 try:
     # Update Account
@@ -121,12 +121,12 @@ The get provider accounts service is used to return all the provider accounts ad
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ProviderAccountsApi()
+api_instance = yodlee.ProviderAccountsApi()
 include = 'include_example' # str | include (optional)
 provider_ids = 'provider_ids_example' # str | Comma separated providerIds. (optional)
 
@@ -171,12 +171,12 @@ The get provider account details service is used to learn the status of adding a
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ProviderAccountsApi()
+api_instance = yodlee.ProviderAccountsApi()
 provider_account_id = 789 # int | providerAccountId
 include = 'include_example' # str | include credentials,questions (optional)
 request_id = 'request_id_example' # str | The unique identifier for the request that returns contextual data (optional)
@@ -223,12 +223,12 @@ The get provider accounts profile service is used to return the user profile det
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ProviderAccountsApi()
+api_instance = yodlee.ProviderAccountsApi()
 provider_account_id = 'provider_account_id_example' # str | Comma separated providerAccountIds. (optional)
 
 try:
@@ -271,13 +271,13 @@ The add account service is used to link the user's account with the provider sit
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ProviderAccountsApi()
-provider_account_request = yodlee_client.ProviderAccountRequest() # ProviderAccountRequest | loginForm or field entity
+api_instance = yodlee.ProviderAccountsApi()
+provider_account_request = yodlee.ProviderAccountRequest() # ProviderAccountRequest | loginForm or field entity
 provider_id = 789 # int | providerId
 
 try:
@@ -321,13 +321,13 @@ This endpoint is used to update preferences like data extracts and auto refreshe
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ProviderAccountsApi()
-preferences = yodlee_client.ProviderAccountPreferencesRequest() # ProviderAccountPreferencesRequest | preferences
+api_instance = yodlee.ProviderAccountsApi()
+preferences = yodlee.ProviderAccountPreferencesRequest() # ProviderAccountPreferencesRequest | preferences
 provider_account_id = 789 # int | providerAccountId
 
 try:

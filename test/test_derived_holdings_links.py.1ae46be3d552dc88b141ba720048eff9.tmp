@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.derived_holdings_links import DerivedHoldingsLinks  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.derived_holdings_links import DerivedHoldingsLinks  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestDerivedHoldingsLinks(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestDerivedHoldingsLinks(unittest.TestCase):
     def testDerivedHoldingsLinks(self):
         """Test DerivedHoldingsLinks"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.derived_holdings_links.DerivedHoldingsLinks()  # noqa: E501
+        # model = yodlee.models.derived_holdings_links.DerivedHoldingsLinks()  # noqa: E501
         pass
 
 

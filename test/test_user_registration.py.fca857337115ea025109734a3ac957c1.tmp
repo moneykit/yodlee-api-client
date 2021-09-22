@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.user_registration import UserRegistration  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.user_registration import UserRegistration  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestUserRegistration(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestUserRegistration(unittest.TestCase):
     def testUserRegistration(self):
         """Test UserRegistration"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.user_registration.UserRegistration()  # noqa: E501
+        # model = yodlee.models.user_registration.UserRegistration()  # noqa: E501
         pass
 
 

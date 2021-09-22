@@ -1,4 +1,4 @@
-# yodlee_client.UserApi
+# yodlee.UserApi
 
 All URIs are relative to *https://localhost*
 
@@ -24,12 +24,12 @@ The Get Access Tokens service is used to retrieve the access tokens for the appl
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.UserApi()
+api_instance = yodlee.UserApi()
 app_ids = 'app_ids_example' # str | appIds
 
 try:
@@ -72,12 +72,12 @@ The get user details service is used to get the user profile information and the
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.UserApi()
+api_instance = yodlee.UserApi()
 
 try:
     # Get User Details
@@ -116,13 +116,13 @@ The register user service is used to register a user in Yodlee.<br>The loginName
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.UserApi()
-user_request = yodlee_client.UserRequest() # UserRequest | userRequest
+api_instance = yodlee.UserApi()
+user_request = yodlee.UserRequest() # UserRequest | userRequest
 
 try:
     # Register User
@@ -164,12 +164,12 @@ The SAML login service is used to authenticate system users with a SAML response
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.UserApi()
+api_instance = yodlee.UserApi()
 issuer = 'issuer_example' # str | issuer
 saml_response = 'saml_response_example' # str | samlResponse
 source = 'source_example' # str | source (optional)
@@ -216,12 +216,12 @@ The delete user service is used to delete or unregister a user from Yodlee. <br>
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.UserApi()
+api_instance = yodlee.UserApi()
 
 try:
     # Delete User
@@ -259,13 +259,13 @@ The update user details service is used to update user details like name, addres
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.UserApi()
-user_request = yodlee_client.UpdateUserRequest() # UpdateUserRequest | userRequest
+api_instance = yodlee.UserApi()
+user_request = yodlee.UpdateUserRequest() # UpdateUserRequest | userRequest
 
 try:
     # Update User Details
@@ -306,12 +306,12 @@ User Logout
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.UserApi()
+api_instance = yodlee.UserApi()
 
 try:
     # User Logout

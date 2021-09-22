@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.profile import Profile  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.profile import Profile  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestProfile(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestProfile(unittest.TestCase):
     def testProfile(self):
         """Test Profile"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.profile.Profile()  # noqa: E501
+        # model = yodlee.models.profile.Profile()  # noqa: E501
         pass
 
 

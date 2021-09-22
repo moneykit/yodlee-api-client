@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.api.enrich_data_api import EnrichDataApi  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.api.enrich_data_api import EnrichDataApi  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestEnrichDataApi(unittest.TestCase):
     """EnrichDataApi unit test stubs"""
 
     def setUp(self):
-        self.api = yodlee_client.api.enrich_data_api.EnrichDataApi()  # noqa: E501
+        self.api = yodlee.api.enrich_data_api.EnrichDataApi()  # noqa: E501
 
     def tearDown(self):
         pass

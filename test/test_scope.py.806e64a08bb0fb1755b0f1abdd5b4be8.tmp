@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.scope import Scope  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.scope import Scope  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestScope(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestScope(unittest.TestCase):
     def testScope(self):
         """Test Scope"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.scope.Scope()  # noqa: E501
+        # model = yodlee.models.scope.Scope()  # noqa: E501
         pass
 
 

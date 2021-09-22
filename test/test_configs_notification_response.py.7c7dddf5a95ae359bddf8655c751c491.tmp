@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.configs_notification_response import ConfigsNotificationResponse  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.configs_notification_response import ConfigsNotificationResponse  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestConfigsNotificationResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestConfigsNotificationResponse(unittest.TestCase):
     def testConfigsNotificationResponse(self):
         """Test ConfigsNotificationResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.configs_notification_response.ConfigsNotificationResponse()  # noqa: E501
+        # model = yodlee.models.configs_notification_response.ConfigsNotificationResponse()  # noqa: E501
         pass
 
 

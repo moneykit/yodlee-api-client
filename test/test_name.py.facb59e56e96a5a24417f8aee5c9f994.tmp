@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.name import Name  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.name import Name  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestName(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestName(unittest.TestCase):
     def testName(self):
         """Test Name"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.name.Name()  # noqa: E501
+        # model = yodlee.models.name.Name()  # noqa: E501
         pass
 
 

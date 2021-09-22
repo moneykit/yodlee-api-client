@@ -1,4 +1,4 @@
-# yodlee_client.StatementsApi
+# yodlee.StatementsApi
 
 All URIs are relative to *https://localhost*
 
@@ -18,12 +18,12 @@ The statements service is used to get the list of statement related information.
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.StatementsApi()
+api_instance = yodlee.StatementsApi()
 account_id = 'account_id_example' # str | accountId (optional)
 container = 'container_example' # str | creditCard/loan/bill/insurance (optional)
 from_date = 'from_date_example' # str | from date for statement retrieval (YYYY-MM-DD) (optional)

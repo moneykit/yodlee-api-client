@@ -23,7 +23,7 @@ pip install git+https://github.com//.git
 
 Then import the package:
 ```python
-import yodlee_client 
+import yodlee 
 ```
 
 ### Setuptools
@@ -37,7 +37,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import yodlee_client
+import yodlee
 ```
 
 ## Getting Started
@@ -47,13 +47,13 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.AccountsApi(yodlee_client.ApiClient(configuration))
-account_param = yodlee_client.CreateAccountRequest() # CreateAccountRequest | accountParam
+api_instance = yodlee.AccountsApi(yodlee.ApiClient(configuration))
+account_param = yodlee.CreateAccountRequest() # CreateAccountRequest | accountParam
 
 try:
     # Add Manual Account

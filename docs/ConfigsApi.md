@@ -1,4 +1,4 @@
-# yodlee_client.ConfigsApi
+# yodlee.ConfigsApi
 
 All URIs are relative to *https://localhost*
 
@@ -22,14 +22,14 @@ The subscribe events service is used to subscribe to an event for receiving noti
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ConfigsApi()
+api_instance = yodlee.ConfigsApi()
 event_name = 'event_name_example' # str | eventName
-event_request = yodlee_client.CreateConfigsNotificationEventRequest() # CreateConfigsNotificationEventRequest | eventRequest
+event_request = yodlee.CreateConfigsNotificationEventRequest() # CreateConfigsNotificationEventRequest | eventRequest
 
 try:
     # Subscribe For Notification Event
@@ -71,12 +71,12 @@ The delete events service is used to unsubscribe from an events service.<br>
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ConfigsApi()
+api_instance = yodlee.ConfigsApi()
 event_name = 'event_name_example' # str | eventName
 
 try:
@@ -118,12 +118,12 @@ The get public key service provides the public key that should be used to encryp
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ConfigsApi()
+api_instance = yodlee.ConfigsApi()
 
 try:
     # Get Public Key
@@ -162,12 +162,12 @@ The get events service provides the list of events for which consumers subscribe
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ConfigsApi()
+api_instance = yodlee.ConfigsApi()
 event_name = 'event_name_example' # str | eventName (optional)
 
 try:
@@ -210,14 +210,14 @@ The update events service is used to update the callback URL.<br>If the callback
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ConfigsApi()
+api_instance = yodlee.ConfigsApi()
 event_name = 'event_name_example' # str | eventName
-event_request = yodlee_client.UpdateConfigsNotificationEventRequest() # UpdateConfigsNotificationEventRequest | eventRequest
+event_request = yodlee.UpdateConfigsNotificationEventRequest() # UpdateConfigsNotificationEventRequest | eventRequest
 
 try:
     # Update Notification Subscription

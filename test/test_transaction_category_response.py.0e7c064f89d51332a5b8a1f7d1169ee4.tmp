@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.transaction_category_response import TransactionCategoryResponse  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.transaction_category_response import TransactionCategoryResponse  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestTransactionCategoryResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestTransactionCategoryResponse(unittest.TestCase):
     def testTransactionCategoryResponse(self):
         """Test TransactionCategoryResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.transaction_category_response.TransactionCategoryResponse()  # noqa: E501
+        # model = yodlee.models.transaction_category_response.TransactionCategoryResponse()  # noqa: E501
         pass
 
 

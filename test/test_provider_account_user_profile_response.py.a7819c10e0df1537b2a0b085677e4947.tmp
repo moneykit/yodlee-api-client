@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.provider_account_user_profile_response import ProviderAccountUserProfileResponse  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.provider_account_user_profile_response import ProviderAccountUserProfileResponse  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestProviderAccountUserProfileResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestProviderAccountUserProfileResponse(unittest.TestCase):
     def testProviderAccountUserProfileResponse(self):
         """Test ProviderAccountUserProfileResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.provider_account_user_profile_response.ProviderAccountUserProfileResponse()  # noqa: E501
+        # model = yodlee.models.provider_account_user_profile_response.ProviderAccountUserProfileResponse()  # noqa: E501
         pass
 
 

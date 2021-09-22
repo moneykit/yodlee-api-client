@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.enrich_user_data import EnrichUserData  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.enrich_user_data import EnrichUserData  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestEnrichUserData(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestEnrichUserData(unittest.TestCase):
     def testEnrichUserData(self):
         """Test EnrichUserData"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.enrich_user_data.EnrichUserData()  # noqa: E501
+        # model = yodlee.models.enrich_user_data.EnrichUserData()  # noqa: E501
         pass
 
 

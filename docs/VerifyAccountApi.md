@@ -1,4 +1,4 @@
-# yodlee_client.VerifyAccountApi
+# yodlee.VerifyAccountApi
 
 All URIs are relative to *https://localhost*
 
@@ -18,14 +18,14 @@ The verify account service is used to verify the account's ownership by  matchin
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.VerifyAccountApi()
+api_instance = yodlee.VerifyAccountApi()
 provider_account_id = 'provider_account_id_example' # str | providerAccountId
-verification_param = yodlee_client.VerifyAccountRequest() # VerifyAccountRequest | verificationParam
+verification_param = yodlee.VerifyAccountRequest() # VerifyAccountRequest | verificationParam
 
 try:
     # Verify Accounts Using Transactions

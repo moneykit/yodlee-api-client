@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.cobrand_login_response import CobrandLoginResponse  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.cobrand_login_response import CobrandLoginResponse  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestCobrandLoginResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCobrandLoginResponse(unittest.TestCase):
     def testCobrandLoginResponse(self):
         """Test CobrandLoginResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.cobrand_login_response.CobrandLoginResponse()  # noqa: E501
+        # model = yodlee.models.cobrand_login_response.CobrandLoginResponse()  # noqa: E501
         pass
 
 

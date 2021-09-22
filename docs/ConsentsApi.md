@@ -1,4 +1,4 @@
-# yodlee_client.ConsentsApi
+# yodlee.ConsentsApi
 
 All URIs are relative to *https://localhost*
 
@@ -21,13 +21,13 @@ The generate consent service is used to generate all the consent information and
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ConsentsApi()
-consent_request = yodlee_client.CreateConsentRequest() # CreateConsentRequest | Unique identifier for the provider site(mandatory), the name of the application,  <br/>the flag responsible to include html content in the response, <br/>when passed as true and the name of the dataset attribute supported by the provider.
+api_instance = yodlee.ConsentsApi()
+consent_request = yodlee.CreateConsentRequest() # CreateConsentRequest | Unique identifier for the provider site(mandatory), the name of the application,  <br/>the flag responsible to include html content in the response, <br/>when passed as true and the name of the dataset attribute supported by the provider.
 
 try:
     # Post Consent
@@ -69,12 +69,12 @@ The get authorization URL for consent service provides the authorization URL for
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ConsentsApi()
+api_instance = yodlee.ConsentsApi()
 consent_id = 789 # int | Consent Id generated through POST Consent.
 
 try:
@@ -117,12 +117,12 @@ The get consent service is used to retrieve all the consents submitted to Yodlee
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ConsentsApi()
+api_instance = yodlee.ConsentsApi()
 consent_ids = 'consent_ids_example' # str | Consent Id generated through POST Consent. (optional)
 provider_account_ids = 'provider_account_ids_example' # str | Unique identifier for the provider account resource. This is created during account addition. (optional)
 
@@ -167,14 +167,14 @@ The update consent service is used to capture the user acceptance of the consent
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ConsentsApi()
+api_instance = yodlee.ConsentsApi()
 consent_id = 789 # int | Consent Id generated through POST Consent.
-consent_request = yodlee_client.UpdateConsentRequest() # UpdateConsentRequest | Applicable Open Banking data cluster values.
+consent_request = yodlee.UpdateConsentRequest() # UpdateConsentRequest | Applicable Open Banking data cluster values.
 
 try:
     # Put Consent

@@ -1,4 +1,4 @@
-# yodlee_client.InstitutionsApi
+# yodlee.InstitutionsApi
 
 All URIs are relative to *https://localhost*
 
@@ -18,12 +18,12 @@ Yodlee classifies providers into credential-based aggregation and Open Banking (
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.InstitutionsApi()
+api_instance = yodlee.InstitutionsApi()
 datasetfilter = 'datasetfilter_example' # str | Expression to filter the providers by dataset(s) or dataset attribute(s). The default value will be the dataset or dataset attributes configured as default for the customer. (optional)
 name = 'name_example' # str | Name in minimum 1 character or routing number. (optional)
 priority = 'priority_example' # str | Search priority (optional)

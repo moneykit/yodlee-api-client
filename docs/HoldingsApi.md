@@ -1,4 +1,4 @@
-# yodlee_client.HoldingsApi
+# yodlee.HoldingsApi
 
 All URIs are relative to *https://localhost*
 
@@ -21,12 +21,12 @@ The get asset classifications list service is used to get the supported asset cl
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.HoldingsApi()
+api_instance = yodlee.HoldingsApi()
 
 try:
     # Get Asset Classification List
@@ -65,12 +65,12 @@ The get holding types list service is used to get the supported holding types.<b
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.HoldingsApi()
+api_instance = yodlee.HoldingsApi()
 
 try:
     # Get Holding Type List
@@ -109,12 +109,12 @@ The get holdings service is used to get the list of holdings of a user.<br>Suppo
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.HoldingsApi()
+api_instance = yodlee.HoldingsApi()
 account_id = 'account_id_example' # str | Comma separated accountId (optional)
 asset_classification_classification_type = 'asset_classification_classification_type_example' # str | e.g. Country, Sector, etc. (optional)
 classification_value = 'classification_value_example' # str | e.g. US (optional)
@@ -165,12 +165,12 @@ The get security details service is used to get all the security information for
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.HoldingsApi()
+api_instance = yodlee.HoldingsApi()
 holding_id = 'holding_id_example' # str | Comma separated holdingId (optional)
 
 try:

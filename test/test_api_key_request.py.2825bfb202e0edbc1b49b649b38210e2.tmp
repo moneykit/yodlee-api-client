@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.api_key_request import ApiKeyRequest  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.api_key_request import ApiKeyRequest  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestApiKeyRequest(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestApiKeyRequest(unittest.TestCase):
     def testApiKeyRequest(self):
         """Test ApiKeyRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.api_key_request.ApiKeyRequest()  # noqa: E501
+        # model = yodlee.models.api_key_request.ApiKeyRequest()  # noqa: E501
         pass
 
 

@@ -1,4 +1,4 @@
-# yodlee_client.TransactionsApi
+# yodlee.TransactionsApi
 
 All URIs are relative to *https://localhost*
 
@@ -30,12 +30,12 @@ The Create or Run Transaction Categorization Rule endpoint is used to: <br>Creat
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.TransactionsApi()
+api_instance = yodlee.TransactionsApi()
 action = 'action_example' # str | To run rules, pass action=run. Only value run is supported (optional)
 rule_param = 'rule_param_example' # str | rules(JSON format) to categorize the transactions (optional)
 
@@ -79,13 +79,13 @@ The create transaction categories service is used to create user-defined categor
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.TransactionsApi()
-transaction_category_request = yodlee_client.TransactionCategoryRequest() # TransactionCategoryRequest | User Transaction Category in JSON format
+api_instance = yodlee.TransactionsApi()
+transaction_category_request = yodlee.TransactionCategoryRequest() # TransactionCategoryRequest | User Transaction Category in JSON format
 
 try:
     # Create Category
@@ -126,12 +126,12 @@ The delete transaction categorization rule service is used to delete the given u
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.TransactionsApi()
+api_instance = yodlee.TransactionsApi()
 rule_id = 789 # int | ruleId
 
 try:
@@ -173,12 +173,12 @@ The delete transaction categories service is used to delete the given user-defin
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.TransactionsApi()
+api_instance = yodlee.TransactionsApi()
 category_id = 789 # int | categoryId
 
 try:
@@ -220,12 +220,12 @@ The categories service returns the list of available transaction categories.<br>
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.TransactionsApi()
+api_instance = yodlee.TransactionsApi()
 
 try:
     # Get Transaction Category List
@@ -264,12 +264,12 @@ The get transaction categorization rule service is used to get all the categoriz
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.TransactionsApi()
+api_instance = yodlee.TransactionsApi()
 
 try:
     # Get Transaction Categorization Rules
@@ -308,12 +308,12 @@ The get transaction categorization rule service is used to get all the categoriz
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.TransactionsApi()
+api_instance = yodlee.TransactionsApi()
 
 try:
     # Get Transaction Categorization Rules
@@ -352,12 +352,12 @@ The Transaction service is used to get a list of transactions for a user.<br>By 
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.TransactionsApi()
+api_instance = yodlee.TransactionsApi()
 account_id = 'account_id_example' # str | Comma separated accountIds (optional)
 base_type = 'base_type_example' # str | DEBIT/CREDIT (optional)
 category_id = 'category_id_example' # str | Comma separated categoryIds (optional)
@@ -424,12 +424,12 @@ The count service provides the total number of transactions for a specific user 
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.TransactionsApi()
+api_instance = yodlee.TransactionsApi()
 account_id = 'account_id_example' # str | Comma separated accountIds  (optional)
 base_type = 'base_type_example' # str | DEBIT/CREDIT (optional)
 category_id = 'category_id_example' # str | Comma separated categoryIds (optional)
@@ -492,12 +492,12 @@ The run transaction categorization rule service is used to run a rule on <br>tra
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.TransactionsApi()
+api_instance = yodlee.TransactionsApi()
 action = 'run' # str |  (default to run)
 rule_id = 789 # int | Unique id of the categorization rule
 
@@ -541,14 +541,14 @@ The update transaction service is used to update the category,consumer descripti
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.TransactionsApi()
+api_instance = yodlee.TransactionsApi()
 transaction_id = 789 # int | transactionId
-transaction_request = yodlee_client.TransactionRequest() # TransactionRequest | transactionRequest
+transaction_request = yodlee.TransactionRequest() # TransactionRequest | transactionRequest
 
 try:
     # Update Transaction
@@ -590,14 +590,14 @@ The update transaction categorization rule service is used to update a categoriz
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.TransactionsApi()
+api_instance = yodlee.TransactionsApi()
 rule_id = 789 # int | ruleId
-transaction_categories_rule_request = yodlee_client.TransactionCategorizationRuleRequest() # TransactionCategorizationRuleRequest | transactionCategoriesRuleRequest
+transaction_categories_rule_request = yodlee.TransactionCategorizationRuleRequest() # TransactionCategorizationRuleRequest | transactionCategoriesRuleRequest
 
 try:
     # Update Transaction Categorization Rule
@@ -639,13 +639,13 @@ The update transaction categories service is used to update the transaction cate
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.TransactionsApi()
-update_category_request = yodlee_client.UpdateCategoryRequest() # UpdateCategoryRequest | updateCategoryRequest
+api_instance = yodlee.TransactionsApi()
+update_category_request = yodlee.UpdateCategoryRequest() # UpdateCategoryRequest | updateCategoryRequest
 
 try:
     # Update Category

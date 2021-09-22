@@ -1,4 +1,4 @@
-# yodlee_client.DocumentsApi
+# yodlee.DocumentsApi
 
 All URIs are relative to *https://localhost*
 
@@ -20,12 +20,12 @@ The delete document service allows the consumer to delete a document. The delete
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.DocumentsApi()
+api_instance = yodlee.DocumentsApi()
 document_id = 'document_id_example' # str | documentId
 
 try:
@@ -67,12 +67,12 @@ The get document details service allows consumers to download a document. The do
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.DocumentsApi()
+api_instance = yodlee.DocumentsApi()
 document_id = 'document_id_example' # str | documentId
 
 try:
@@ -115,12 +115,12 @@ The get documents service allows customers to search or retrieve metadata relate
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.DocumentsApi()
+api_instance = yodlee.DocumentsApi()
 keyword = 'keyword_example' # str | The string used to search a document by its name. (optional)
 account_id = 'account_id_example' # str | The unique identifier of an account. Retrieve documents for a given accountId. (optional)
 doc_type = 'doc_type_example' # str | Accepts only one of the following valid document types: STMT, TAX, and EBILL. (optional)

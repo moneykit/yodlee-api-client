@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.capability import Capability  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.capability import Capability  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestCapability(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCapability(unittest.TestCase):
     def testCapability(self):
         """Test Capability"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.capability.Capability()  # noqa: E501
+        # model = yodlee.models.capability.Capability()  # noqa: E501
         pass
 
 

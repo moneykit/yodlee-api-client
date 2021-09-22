@@ -1,4 +1,4 @@
-# yodlee_client.EnrichDataApi
+# yodlee.EnrichDataApi
 
 All URIs are relative to *https://localhost*
 
@@ -18,13 +18,13 @@ Push UserData
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.EnrichDataApi()
-user_data = yodlee_client.EnrichDataRequest() # EnrichDataRequest | Input for User Data (optional)
+api_instance = yodlee.EnrichDataApi()
+user_data = yodlee.EnrichDataRequest() # EnrichDataRequest | Input for User Data (optional)
 
 try:
     # Push UserData

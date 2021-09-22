@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.verification_request import VerificationRequest  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.verification_request import VerificationRequest  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestVerificationRequest(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestVerificationRequest(unittest.TestCase):
     def testVerificationRequest(self):
         """Test VerificationRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.verification_request.VerificationRequest()  # noqa: E501
+        # model = yodlee.models.verification_request.VerificationRequest()  # noqa: E501
         pass
 
 

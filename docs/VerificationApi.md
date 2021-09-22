@@ -1,4 +1,4 @@
-# yodlee_client.VerificationApi
+# yodlee.VerificationApi
 
 All URIs are relative to *https://localhost*
 
@@ -20,12 +20,12 @@ The get verification status service is used to retrieve the verification status 
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.VerificationApi()
+api_instance = yodlee.VerificationApi()
 account_id = 'account_id_example' # str | Comma separated accountId (optional)
 provider_account_id = 'provider_account_id_example' # str | Comma separated providerAccountId (optional)
 verification_type = 'verification_type_example' # str | verificationType (optional)
@@ -72,13 +72,13 @@ The post verification service is used to initiate the matching service (MS) and 
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.VerificationApi()
-verification_param = yodlee_client.VerificationRequest() # VerificationRequest | verification information
+api_instance = yodlee.VerificationApi()
+verification_param = yodlee.VerificationRequest() # VerificationRequest | verification information
 
 try:
     # Initiaite Matching Service and Challenge Deposit
@@ -120,13 +120,13 @@ The put verification service is used to complete the CDV process.<br> In the CDV
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.VerificationApi()
-verification_param = yodlee_client.UpdateVerificationRequest() # UpdateVerificationRequest | verification information
+api_instance = yodlee.VerificationApi()
+verification_param = yodlee.UpdateVerificationRequest() # UpdateVerificationRequest | verification information
 
 try:
     # Verify Challenge Deposit

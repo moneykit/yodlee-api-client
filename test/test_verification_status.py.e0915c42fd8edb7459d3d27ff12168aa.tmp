@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import yodlee_client
-from yodlee_client.models.verification_status import VerificationStatus  # noqa: E501
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.models.verification_status import VerificationStatus  # noqa: E501
+from yodlee.rest import ApiException
 
 
 class TestVerificationStatus(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestVerificationStatus(unittest.TestCase):
     def testVerificationStatus(self):
         """Test VerificationStatus"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = yodlee_client.models.verification_status.VerificationStatus()  # noqa: E501
+        # model = yodlee.models.verification_status.VerificationStatus()  # noqa: E501
         pass
 
 

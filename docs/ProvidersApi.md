@@ -1,4 +1,4 @@
-# yodlee_client.ProvidersApi
+# yodlee.ProvidersApi
 
 All URIs are relative to *https://localhost*
 
@@ -20,12 +20,12 @@ The get provider service is used to get all the providers that are enabled, sear
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ProvidersApi()
+api_instance = yodlee.ProvidersApi()
 capability = 'capability_example' # str | CHALLENGE_DEPOSIT_VERIFICATION - capability search is deprecated (optional)
 datasetfilter = 'datasetfilter_example' # str | Expression to filter the providers by dataset(s) or dataset attribute(s). The default value will be the dataset or dataset attributes configured as default for the customer. (optional)
 full_account_number_fields = 'full_account_number_fields_example' # str | Specify to filter the providers with values paymentAccountNumber,unmaskedAccountNumber. (optional)
@@ -84,12 +84,12 @@ The get provider detail service is used to get detailed information including th
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ProvidersApi()
+api_instance = yodlee.ProvidersApi()
 provider_id = 789 # int | providerId
 
 try:
@@ -132,12 +132,12 @@ The count service provides the total number of providers that get returned in th
 ```python
 from __future__ import print_function
 import time
-import yodlee_client
-from yodlee_client.rest import ApiException
+import yodlee
+from yodlee.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = yodlee_client.ProvidersApi()
+api_instance = yodlee.ProvidersApi()
 capability = 'capability_example' # str | CHALLENGE_DEPOSIT_VERIFICATION - capability search is deprecated (optional)
 datasetfilter = 'datasetfilter_example' # str | Expression to filter the providers by dataset(s) or dataset attribute(s). The default value will be the dataset or dataset attributes configured as default for the customer. (optional)
 full_account_number_fields = 'full_account_number_fields_example' # str | Specify to filter the providers with values paymentAccountNumber,unmaskedAccountNumber. (optional)
