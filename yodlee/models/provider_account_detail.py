@@ -230,8 +230,9 @@ class ProviderAccountDetail(object):
         :param consent_id: The consent_id of this ProviderAccountDetail.  # noqa: E501
         :type: int
         """
-        if self._configuration.client_side_validation and consent_id is None:
-            raise ValueError("Invalid value for `consent_id`, must not be `None`")  # noqa: E501
+        # JH: Manually edited
+        # if self._configuration.client_side_validation and consent_id is None:
+        #     raise ValueError("Invalid value for `consent_id`, must not be `None`")  # noqa: E501
 
         self._consent_id = consent_id
 
