@@ -3,7 +3,7 @@
 """
     Yodlee Core APIs
 
-    This file describes the Yodlee Platform APIs, using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. You can generate a client SDK for Python, Java, javascript, PHP or other languages according to your development needs. For more details about our APIs themselves, please refer to https://developer.yodlee.com/Yodlee_API/.  # noqa: E501
+    This file describes the Yodlee Platform APIs using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. Yodlee supports the Java SDK and it is available <a href=\"https://developer.yodlee.com/java-sdk-overview \">here</a>. You can generate a client SDK for Python, Java, JavaScript, PHP, or other languages according to your development needs. For more details about the APIs, refer to <a href=\"https://developer.yodlee.com/docs/api/1.1/Overview\">Yodlee API v1.1 - Overview</a>.<br><br>You will have to set the header before making the API call. The following headers apply to all the APIs:<ul><li>Authorization: This header holds the access token</li> <li> Api-Version: 1.1</li></ul><b>Note</b>: If there are any API-specific headers, they are mentioned explicitly in the respective API's description.  # noqa: E501
 
     OpenAPI spec version: 1.1.0
     Contact: developer@yodlee.com
@@ -81,7 +81,7 @@ class TransactionCategorizationRule(object):
     def rule_clauses(self):
         """Gets the rule_clauses of this TransactionCategorizationRule.  # noqa: E501
 
-        Details of rules. <br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Details of rules. <br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :return: The rule_clauses of this TransactionCategorizationRule.  # noqa: E501
         :rtype: list[RuleClause]
@@ -92,7 +92,7 @@ class TransactionCategorizationRule(object):
     def rule_clauses(self, rule_clauses):
         """Sets the rule_clauses of this TransactionCategorizationRule.
 
-        Details of rules. <br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Details of rules. <br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :param rule_clauses: The rule_clauses of this TransactionCategorizationRule.  # noqa: E501
         :type: list[RuleClause]
@@ -104,7 +104,7 @@ class TransactionCategorizationRule(object):
     def user_defined_rule_id(self):
         """Gets the user_defined_rule_id of this TransactionCategorizationRule.  # noqa: E501
 
-        Unique identifier generated for every rule the user creates.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Unique identifier generated for every rule the user creates.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :return: The user_defined_rule_id of this TransactionCategorizationRule.  # noqa: E501
         :rtype: int
@@ -115,7 +115,7 @@ class TransactionCategorizationRule(object):
     def user_defined_rule_id(self, user_defined_rule_id):
         """Sets the user_defined_rule_id of this TransactionCategorizationRule.
 
-        Unique identifier generated for every rule the user creates.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Unique identifier generated for every rule the user creates.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :param user_defined_rule_id: The user_defined_rule_id of this TransactionCategorizationRule.  # noqa: E501
         :type: int
@@ -127,7 +127,7 @@ class TransactionCategorizationRule(object):
     def category_level_id(self):
         """Gets the category_level_id of this TransactionCategorizationRule.  # noqa: E501
 
-        The level of the category for which the rule is created.<br><br><b>Applicable containers</b>: bill, creditCard, insurance, loan<br>  # noqa: E501
+        The level of the category for which the rule is created.<br><br><b>Applicable containers</b>: creditCard, insurance, loan<br>  # noqa: E501
 
         :return: The category_level_id of this TransactionCategorizationRule.  # noqa: E501
         :rtype: int
@@ -138,7 +138,7 @@ class TransactionCategorizationRule(object):
     def category_level_id(self, category_level_id):
         """Sets the category_level_id of this TransactionCategorizationRule.
 
-        The level of the category for which the rule is created.<br><br><b>Applicable containers</b>: bill, creditCard, insurance, loan<br>  # noqa: E501
+        The level of the category for which the rule is created.<br><br><b>Applicable containers</b>: creditCard, insurance, loan<br>  # noqa: E501
 
         :param category_level_id: The category_level_id of this TransactionCategorizationRule.  # noqa: E501
         :type: int
@@ -150,7 +150,7 @@ class TransactionCategorizationRule(object):
     def transaction_categorisation_id(self):
         """Gets the transaction_categorisation_id of this TransactionCategorizationRule.  # noqa: E501
 
-        Category id that is assigned to the transaction when the transaction matches the rule clause. This is the id field of the transaction category resource.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Category id that is assigned to the transaction when the transaction matches the rule clause. This is the id field of the transaction category resource.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :return: The transaction_categorisation_id of this TransactionCategorizationRule.  # noqa: E501
         :rtype: int
@@ -161,7 +161,7 @@ class TransactionCategorizationRule(object):
     def transaction_categorisation_id(self, transaction_categorisation_id):
         """Sets the transaction_categorisation_id of this TransactionCategorizationRule.
 
-        Category id that is assigned to the transaction when the transaction matches the rule clause. This is the id field of the transaction category resource.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Category id that is assigned to the transaction when the transaction matches the rule clause. This is the id field of the transaction category resource.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :param transaction_categorisation_id: The transaction_categorisation_id of this TransactionCategorizationRule.  # noqa: E501
         :type: int
@@ -173,7 +173,7 @@ class TransactionCategorizationRule(object):
     def mem_id(self):
         """Gets the mem_id of this TransactionCategorizationRule.  # noqa: E501
 
-        Unique identifier of the user.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Unique identifier of the user.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :return: The mem_id of this TransactionCategorizationRule.  # noqa: E501
         :rtype: int
@@ -184,7 +184,7 @@ class TransactionCategorizationRule(object):
     def mem_id(self, mem_id):
         """Sets the mem_id of this TransactionCategorizationRule.
 
-        Unique identifier of the user.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Unique identifier of the user.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :param mem_id: The mem_id of this TransactionCategorizationRule.  # noqa: E501
         :type: int
@@ -196,7 +196,7 @@ class TransactionCategorizationRule(object):
     def rule_priority(self):
         """Gets the rule_priority of this TransactionCategorizationRule.  # noqa: E501
 
-        The order in which the rules get executed on transactions.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        The order in which the rules get executed on transactions.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :return: The rule_priority of this TransactionCategorizationRule.  # noqa: E501
         :rtype: int
@@ -207,7 +207,7 @@ class TransactionCategorizationRule(object):
     def rule_priority(self, rule_priority):
         """Sets the rule_priority of this TransactionCategorizationRule.
 
-        The order in which the rules get executed on transactions.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        The order in which the rules get executed on transactions.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :param rule_priority: The rule_priority of this TransactionCategorizationRule.  # noqa: E501
         :type: int

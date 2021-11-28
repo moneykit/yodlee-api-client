@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 Delete Document
 
-The delete document service allows the consumer to delete a document. The deleted <br>document will not be returned in the get documents API. The HTTP response code is 204 (success without content).<br>Documents can be deleted only if the document related dataset attributes are subscribed.<br>
+The delete document service allows the consumer to delete a document. The deleted document will not be returned in the get documents API. The HTTP response code is 204 (success without content).<br>Documents can be deleted only if the document related dataset attributes are subscribed.<br>
 
 ### Example
 ```python
@@ -109,7 +109,7 @@ No authorization required
 
 Get Documents
 
-The get documents service allows customers to search or retrieve metadata related to documents. <br>The API returns the document as per the input parameters passed. If no date range is provided then all downloaded <br>documents will be retrieved. Details of deleted documents or documents associated to closed providerAccount will not be returned <br>This API is a premium service which requires subscription in advance to use.  Please contact Yodlee Client Services for more information. <br>
+The get documents service allows customers to search or retrieve metadata related to documents. <br>The API returns the document as per the input parameters passed. If no date range is provided then all downloaded documents will be retrieved. Details of deleted documents or documents associated to closed providerAccount will not be returned. <br>This API is a premium service which requires subscription in advance to use.  Please contact Yodlee Client Services for more information. <br>
 
 ### Example
 ```python

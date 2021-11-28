@@ -3,7 +3,7 @@
 """
     Yodlee Core APIs
 
-    This file describes the Yodlee Platform APIs, using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. You can generate a client SDK for Python, Java, javascript, PHP or other languages according to your development needs. For more details about our APIs themselves, please refer to https://developer.yodlee.com/Yodlee_API/.  # noqa: E501
+    This file describes the Yodlee Platform APIs using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. Yodlee supports the Java SDK and it is available <a href=\"https://developer.yodlee.com/java-sdk-overview \">here</a>. You can generate a client SDK for Python, Java, JavaScript, PHP, or other languages according to your development needs. For more details about the APIs, refer to <a href=\"https://developer.yodlee.com/docs/api/1.1/Overview\">Yodlee API v1.1 - Overview</a>.<br><br>You will have to set the header before making the API call. The following headers apply to all the APIs:<ul><li>Authorization: This header holds the access token</li> <li> Api-Version: 1.1</li></ul><b>Note</b>: If there are any API-specific headers, they are mentioned explicitly in the respective API's description.  # noqa: E501
 
     OpenAPI spec version: 1.1.0
     Contact: developer@yodlee.com
@@ -76,7 +76,7 @@ class RuleClause(object):
     def field(self):
         """Gets the field of this RuleClause.  # noqa: E501
 
-        Field for which the clause is created.<br><br><br><b>Valid Values</b>:amount,description<b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Field for which the clause is created.<br><br><br><b>Valid Values</b>:amount,description<b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :return: The field of this RuleClause.  # noqa: E501
         :rtype: str
@@ -87,7 +87,7 @@ class RuleClause(object):
     def field(self, field):
         """Sets the field of this RuleClause.
 
-        Field for which the clause is created.<br><br><br><b>Valid Values</b>:amount,description<b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Field for which the clause is created.<br><br><br><b>Valid Values</b>:amount,description<b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :param field: The field of this RuleClause.  # noqa: E501
         :type: str
@@ -106,7 +106,7 @@ class RuleClause(object):
     def user_defined_rule_id(self):
         """Gets the user_defined_rule_id of this RuleClause.  # noqa: E501
 
-        Unique identifier generated for every rule the user creates.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Unique identifier generated for every rule the user creates.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :return: The user_defined_rule_id of this RuleClause.  # noqa: E501
         :rtype: int
@@ -117,7 +117,7 @@ class RuleClause(object):
     def user_defined_rule_id(self, user_defined_rule_id):
         """Sets the user_defined_rule_id of this RuleClause.
 
-        Unique identifier generated for every rule the user creates.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Unique identifier generated for every rule the user creates.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :param user_defined_rule_id: The user_defined_rule_id of this RuleClause.  # noqa: E501
         :type: int
@@ -129,7 +129,7 @@ class RuleClause(object):
     def field_value(self):
         """Gets the field_value of this RuleClause.  # noqa: E501
 
-        The value would be the amount value in case of amount based rule clause or the string value in case of description based rule clause.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        The value would be the amount value in case of amount based rule clause or the string value in case of description based rule clause.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :return: The field_value of this RuleClause.  # noqa: E501
         :rtype: str
@@ -140,7 +140,7 @@ class RuleClause(object):
     def field_value(self, field_value):
         """Sets the field_value of this RuleClause.
 
-        The value would be the amount value in case of amount based rule clause or the string value in case of description based rule clause.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        The value would be the amount value in case of amount based rule clause or the string value in case of description based rule clause.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :param field_value: The field_value of this RuleClause.  # noqa: E501
         :type: str
@@ -152,7 +152,7 @@ class RuleClause(object):
     def operation(self):
         """Gets the operation of this RuleClause.  # noqa: E501
 
-        Operation for which the clause is created.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Operation for which the clause is created.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :return: The operation of this RuleClause.  # noqa: E501
         :rtype: str
@@ -163,7 +163,7 @@ class RuleClause(object):
     def operation(self, operation):
         """Sets the operation of this RuleClause.
 
-        Operation for which the clause is created.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Operation for which the clause is created.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :param operation: The operation of this RuleClause.  # noqa: E501
         :type: str
@@ -182,7 +182,7 @@ class RuleClause(object):
     def rule_clause_id(self):
         """Gets the rule_clause_id of this RuleClause.  # noqa: E501
 
-        Unique identifier generated for the rule clause.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Unique identifier generated for the rule clause.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :return: The rule_clause_id of this RuleClause.  # noqa: E501
         :rtype: int
@@ -193,7 +193,7 @@ class RuleClause(object):
     def rule_clause_id(self, rule_clause_id):
         """Sets the rule_clause_id of this RuleClause.
 
-        Unique identifier generated for the rule clause.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Unique identifier generated for the rule clause.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :param rule_clause_id: The rule_clause_id of this RuleClause.  # noqa: E501
         :type: int

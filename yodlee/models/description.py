@@ -3,7 +3,7 @@
 """
     Yodlee Core APIs
 
-    This file describes the Yodlee Platform APIs, using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. You can generate a client SDK for Python, Java, javascript, PHP or other languages according to your development needs. For more details about our APIs themselves, please refer to https://developer.yodlee.com/Yodlee_API/.  # noqa: E501
+    This file describes the Yodlee Platform APIs using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. Yodlee supports the Java SDK and it is available <a href=\"https://developer.yodlee.com/java-sdk-overview \">here</a>. You can generate a client SDK for Python, Java, JavaScript, PHP, or other languages according to your development needs. For more details about the APIs, refer to <a href=\"https://developer.yodlee.com/docs/api/1.1/Overview\">Yodlee API v1.1 - Overview</a>.<br><br>You will have to set the header before making the API call. The following headers apply to all the APIs:<ul><li>Authorization: This header holds the access token</li> <li> Api-Version: 1.1</li></ul><b>Note</b>: If there are any API-specific headers, they are mentioned explicitly in the respective API's description.  # noqa: E501
 
     OpenAPI spec version: 1.1.0
     Contact: developer@yodlee.com
@@ -94,7 +94,7 @@ class Description(object):
     def original(self):
         """Gets the original of this Description.  # noqa: E501
 
-        Original transaction description as it appears at the FI site.<br><br><b>Applicable containers</b>: bill, creditCard, insurance, loan<br>  # noqa: E501
+        Original transaction description as it appears at the FI site.<br><br><b>Applicable containers</b>: creditCard, insurance, loan<br>  # noqa: E501
 
         :return: The original of this Description.  # noqa: E501
         :rtype: str
@@ -105,7 +105,7 @@ class Description(object):
     def original(self, original):
         """Sets the original of this Description.
 
-        Original transaction description as it appears at the FI site.<br><br><b>Applicable containers</b>: bill, creditCard, insurance, loan<br>  # noqa: E501
+        Original transaction description as it appears at the FI site.<br><br><b>Applicable containers</b>: creditCard, insurance, loan<br>  # noqa: E501
 
         :param original: The original of this Description.  # noqa: E501
         :type: str
@@ -117,7 +117,7 @@ class Description(object):
     def simple(self):
         """Gets the simple of this Description.  # noqa: E501
 
-        The transaction description that appears at the FI site may not be self-explanatory, i.e., the source, purpose of the transaction may not be evident. Yodlee attempts to simplify and make the transaction meaningful to the consumer, and this simplified transaction description is provided in the simple description field.Note: The simple description field is available only in the United States, Canada, United Kingdom, and India.<br><br><b>Applicable containers</b>: bill, creditCard, insurance, loan<br>  # noqa: E501
+        The transaction description that appears at the FI site may not be self-explanatory, i.e., the source, purpose of the transaction may not be evident. Yodlee attempts to simplify and make the transaction meaningful to the consumer, and this simplified transaction description is provided in the simple description field.Note: The simple description field is available only in the United States, Canada, United Kingdom, and India.<br><br><b>Applicable containers</b>: creditCard, insurance, loan<br>  # noqa: E501
 
         :return: The simple of this Description.  # noqa: E501
         :rtype: str
@@ -128,7 +128,7 @@ class Description(object):
     def simple(self, simple):
         """Sets the simple of this Description.
 
-        The transaction description that appears at the FI site may not be self-explanatory, i.e., the source, purpose of the transaction may not be evident. Yodlee attempts to simplify and make the transaction meaningful to the consumer, and this simplified transaction description is provided in the simple description field.Note: The simple description field is available only in the United States, Canada, United Kingdom, and India.<br><br><b>Applicable containers</b>: bill, creditCard, insurance, loan<br>  # noqa: E501
+        The transaction description that appears at the FI site may not be self-explanatory, i.e., the source, purpose of the transaction may not be evident. Yodlee attempts to simplify and make the transaction meaningful to the consumer, and this simplified transaction description is provided in the simple description field.Note: The simple description field is available only in the United States, Canada, United Kingdom, and India.<br><br><b>Applicable containers</b>: creditCard, insurance, loan<br>  # noqa: E501
 
         :param simple: The simple of this Description.  # noqa: E501
         :type: str
@@ -140,7 +140,7 @@ class Description(object):
     def consumer(self):
         """Gets the consumer of this Description.  # noqa: E501
 
-        The description of the transaction as defined by the consumer. The consumer can define or provide more details of the transaction in this field.<br><br><b>Applicable containers</b>: bill, creditCard, insurance, loan<br>  # noqa: E501
+        The description of the transaction as defined by the consumer. The consumer can define or provide more details of the transaction in this field.<br><br><b>Applicable containers</b>: creditCard, insurance, loan<br>  # noqa: E501
 
         :return: The consumer of this Description.  # noqa: E501
         :rtype: str
@@ -151,7 +151,7 @@ class Description(object):
     def consumer(self, consumer):
         """Sets the consumer of this Description.
 
-        The description of the transaction as defined by the consumer. The consumer can define or provide more details of the transaction in this field.<br><br><b>Applicable containers</b>: bill, creditCard, insurance, loan<br>  # noqa: E501
+        The description of the transaction as defined by the consumer. The consumer can define or provide more details of the transaction in this field.<br><br><b>Applicable containers</b>: creditCard, insurance, loan<br>  # noqa: E501
 
         :param consumer: The consumer of this Description.  # noqa: E501
         :type: str

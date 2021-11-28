@@ -3,7 +3,7 @@
 """
     Yodlee Core APIs
 
-    This file describes the Yodlee Platform APIs, using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. You can generate a client SDK for Python, Java, javascript, PHP or other languages according to your development needs. For more details about our APIs themselves, please refer to https://developer.yodlee.com/Yodlee_API/.  # noqa: E501
+    This file describes the Yodlee Platform APIs using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. Yodlee supports the Java SDK and it is available <a href=\"https://developer.yodlee.com/java-sdk-overview \">here</a>. You can generate a client SDK for Python, Java, JavaScript, PHP, or other languages according to your development needs. For more details about the APIs, refer to <a href=\"https://developer.yodlee.com/docs/api/1.1/Overview\">Yodlee API v1.1 - Overview</a>.<br><br>You will have to set the header before making the API call. The following headers apply to all the APIs:<ul><li>Authorization: This header holds the access token</li> <li> Api-Version: 1.1</li></ul><b>Note</b>: If there are any API-specific headers, they are mentioned explicitly in the respective API's description.  # noqa: E501
 
     OpenAPI spec version: 1.1.0
     Contact: developer@yodlee.com
@@ -36,7 +36,7 @@ class DocumentsApi(object):
     def delete_document(self, document_id, **kwargs):  # noqa: E501
         """Delete Document  # noqa: E501
 
-        The delete document service allows the consumer to delete a document. The deleted <br>document will not be returned in the get documents API. The HTTP response code is 204 (success without content).<br>Documents can be deleted only if the document related dataset attributes are subscribed.<br>  # noqa: E501
+        The delete document service allows the consumer to delete a document. The deleted document will not be returned in the get documents API. The HTTP response code is 204 (success without content).<br>Documents can be deleted only if the document related dataset attributes are subscribed.<br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_document(document_id, async_req=True)
@@ -58,7 +58,7 @@ class DocumentsApi(object):
     def delete_document_with_http_info(self, document_id, **kwargs):  # noqa: E501
         """Delete Document  # noqa: E501
 
-        The delete document service allows the consumer to delete a document. The deleted <br>document will not be returned in the get documents API. The HTTP response code is 204 (success without content).<br>Documents can be deleted only if the document related dataset attributes are subscribed.<br>  # noqa: E501
+        The delete document service allows the consumer to delete a document. The deleted document will not be returned in the get documents API. The HTTP response code is 204 (success without content).<br>Documents can be deleted only if the document related dataset attributes are subscribed.<br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_document_with_http_info(document_id, async_req=True)
@@ -226,7 +226,7 @@ class DocumentsApi(object):
     def get_documents(self, **kwargs):  # noqa: E501
         """Get Documents  # noqa: E501
 
-        The get documents service allows customers to search or retrieve metadata related to documents. <br>The API returns the document as per the input parameters passed. If no date range is provided then all downloaded <br>documents will be retrieved. Details of deleted documents or documents associated to closed providerAccount will not be returned <br>This API is a premium service which requires subscription in advance to use.  Please contact Yodlee Client Services for more information. <br>  # noqa: E501
+        The get documents service allows customers to search or retrieve metadata related to documents. <br>The API returns the document as per the input parameters passed. If no date range is provided then all downloaded documents will be retrieved. Details of deleted documents or documents associated to closed providerAccount will not be returned. <br>This API is a premium service which requires subscription in advance to use.  Please contact Yodlee Client Services for more information. <br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_documents(async_req=True)
@@ -252,7 +252,7 @@ class DocumentsApi(object):
     def get_documents_with_http_info(self, **kwargs):  # noqa: E501
         """Get Documents  # noqa: E501
 
-        The get documents service allows customers to search or retrieve metadata related to documents. <br>The API returns the document as per the input parameters passed. If no date range is provided then all downloaded <br>documents will be retrieved. Details of deleted documents or documents associated to closed providerAccount will not be returned <br>This API is a premium service which requires subscription in advance to use.  Please contact Yodlee Client Services for more information. <br>  # noqa: E501
+        The get documents service allows customers to search or retrieve metadata related to documents. <br>The API returns the document as per the input parameters passed. If no date range is provided then all downloaded documents will be retrieved. Details of deleted documents or documents associated to closed providerAccount will not be returned. <br>This API is a premium service which requires subscription in advance to use.  Please contact Yodlee Client Services for more information. <br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_documents_with_http_info(async_req=True)

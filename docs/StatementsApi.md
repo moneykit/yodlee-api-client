@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 Get Statements
 
-The statements service is used to get the list of statement related information. <br>By default, all the latest statements of active and to be closed accounts are retrieved for the user. <br>Certain sites do not have both a statement date and a due date. When a fromDate is passed as an <br>input, all the statements that have the due date on or after the passed date are retrieved. <br>For sites that do not have the due date, statements that have the statement date <br>on or after the passed date are retrieved. <br>The default value of \"isLatest\" is true. To retrieve historical statements isLatest needs to be set to false.<br>
+The statements service is used to get the list of statement related information. <br>By default, all the latest statements of active and to be closed accounts are retrieved for the user. <br>Certain sites do not have both a statement date and a due date. When a fromDate is passed as an input, all the statements that have the due date on or after the passed date are retrieved. <br>For sites that do not have the due date, statements that have the statement date on or after the passed date are retrieved. <br>The default value of \"isLatest\" is true. To retrieve historical statements isLatest needs to be set to false.<br>
 
 ### Example
 ```python
@@ -25,7 +25,7 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = yodlee.StatementsApi()
 account_id = 'account_id_example' # str | accountId (optional)
-container = 'container_example' # str | creditCard/loan/bill/insurance (optional)
+container = 'container_example' # str | creditCard/loan/insurance (optional)
 from_date = 'from_date_example' # str | from date for statement retrieval (YYYY-MM-DD) (optional)
 is_latest = 'is_latest_example' # str | isLatest (true/false) (optional)
 status = 'status_example' # str | ACTIVE,TO_BE_CLOSED,CLOSED (optional)
@@ -43,7 +43,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **account_id** | **str**| accountId | [optional] 
- **container** | **str**| creditCard/loan/bill/insurance | [optional] 
+ **container** | **str**| creditCard/loan/insurance | [optional] 
  **from_date** | **str**| from date for statement retrieval (YYYY-MM-DD) | [optional] 
  **is_latest** | **str**| isLatest (true/false) | [optional] 
  **status** | **str**| ACTIVE,TO_BE_CLOSED,CLOSED | [optional] 

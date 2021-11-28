@@ -3,7 +3,7 @@
 """
     Yodlee Core APIs
 
-    This file describes the Yodlee Platform APIs, using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. You can generate a client SDK for Python, Java, javascript, PHP or other languages according to your development needs. For more details about our APIs themselves, please refer to https://developer.yodlee.com/Yodlee_API/.  # noqa: E501
+    This file describes the Yodlee Platform APIs using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. Yodlee supports the Java SDK and it is available <a href=\"https://developer.yodlee.com/java-sdk-overview \">here</a>. You can generate a client SDK for Python, Java, JavaScript, PHP, or other languages according to your development needs. For more details about the APIs, refer to <a href=\"https://developer.yodlee.com/docs/api/1.1/Overview\">Yodlee API v1.1 - Overview</a>.<br><br>You will have to set the header before making the API call. The following headers apply to all the APIs:<ul><li>Authorization: This header holds the access token</li> <li> Api-Version: 1.1</li></ul><b>Note</b>: If there are any API-specific headers, they are mentioned explicitly in the respective API's description.  # noqa: E501
 
     OpenAPI spec version: 1.1.0
     Contact: developer@yodlee.com
@@ -40,7 +40,8 @@ class Merchant(object):
         'coordinates': 'Coordinates',
         'name': 'str',
         'id': 'str',
-        'source': 'str'
+        'source': 'str',
+        'logo_url': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class Merchant(object):
         'coordinates': 'coordinates',
         'name': 'name',
         'id': 'id',
-        'source': 'source'
+        'source': 'source',
+        'logo_url': 'logoURL'
     }
 
-    def __init__(self, website=None, address=None, contact=None, category_label=None, coordinates=None, name=None, id=None, source=None, _configuration=None):  # noqa: E501
+    def __init__(self, website=None, address=None, contact=None, category_label=None, coordinates=None, name=None, id=None, source=None, logo_url=None, _configuration=None):  # noqa: E501
         """Merchant - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
@@ -68,6 +70,7 @@ class Merchant(object):
         self._name = None
         self._id = None
         self._source = None
+        self._logo_url = None
         self.discriminator = None
 
         if website is not None:
@@ -86,6 +89,8 @@ class Merchant(object):
             self.id = id
         if source is not None:
             self.source = source
+        if logo_url is not None:
+            self.logo_url = logo_url
 
     @property
     def website(self):
@@ -277,6 +282,29 @@ class Merchant(object):
             )
 
         self._source = source
+
+    @property
+    def logo_url(self):
+        """Gets the logo_url of this Merchant.  # noqa: E501
+
+        The logoURL of the merchant.<br><br><b>Applicable containers</b>: bank,creditCard,investment,loan<br>  # noqa: E501
+
+        :return: The logo_url of this Merchant.  # noqa: E501
+        :rtype: str
+        """
+        return self._logo_url
+
+    @logo_url.setter
+    def logo_url(self, logo_url):
+        """Sets the logo_url of this Merchant.
+
+        The logoURL of the merchant.<br><br><b>Applicable containers</b>: bank,creditCard,investment,loan<br>  # noqa: E501
+
+        :param logo_url: The logo_url of this Merchant.  # noqa: E501
+        :type: str
+        """
+
+        self._logo_url = logo_url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

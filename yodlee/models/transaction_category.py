@@ -3,7 +3,7 @@
 """
     Yodlee Core APIs
 
-    This file describes the Yodlee Platform APIs, using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. You can generate a client SDK for Python, Java, javascript, PHP or other languages according to your development needs. For more details about our APIs themselves, please refer to https://developer.yodlee.com/Yodlee_API/.  # noqa: E501
+    This file describes the Yodlee Platform APIs using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. Yodlee supports the Java SDK and it is available <a href=\"https://developer.yodlee.com/java-sdk-overview \">here</a>. You can generate a client SDK for Python, Java, JavaScript, PHP, or other languages according to your development needs. For more details about the APIs, refer to <a href=\"https://developer.yodlee.com/docs/api/1.1/Overview\">Yodlee API v1.1 - Overview</a>.<br><br>You will have to set the header before making the API call. The following headers apply to all the APIs:<ul><li>Authorization: This header holds the access token</li> <li> Api-Version: 1.1</li></ul><b>Note</b>: If there are any API-specific headers, they are mentioned explicitly in the respective API's description.  # noqa: E501
 
     OpenAPI spec version: 1.1.0
     Contact: developer@yodlee.com
@@ -101,7 +101,7 @@ class TransactionCategory(object):
     def high_level_category_name(self):
         """Gets the high_level_category_name of this TransactionCategory.  # noqa: E501
 
-        The name of the high level category. A group of similar transaction categories are clubbed together to form a high-level category.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        The name of the high level category. A group of similar transaction categories are clubbed together to form a high-level category.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :return: The high_level_category_name of this TransactionCategory.  # noqa: E501
         :rtype: str
@@ -112,7 +112,7 @@ class TransactionCategory(object):
     def high_level_category_name(self, high_level_category_name):
         """Sets the high_level_category_name of this TransactionCategory.
 
-        The name of the high level category. A group of similar transaction categories are clubbed together to form a high-level category.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        The name of the high level category. A group of similar transaction categories are clubbed together to form a high-level category.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :param high_level_category_name: The high_level_category_name of this TransactionCategory.  # noqa: E501
         :type: str
@@ -147,7 +147,7 @@ class TransactionCategory(object):
     def high_level_category_id(self):
         """Gets the high_level_category_id of this TransactionCategory.  # noqa: E501
 
-        The unique identifier of the high level category.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        The unique identifier of the high level category.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :return: The high_level_category_id of this TransactionCategory.  # noqa: E501
         :rtype: int
@@ -158,7 +158,7 @@ class TransactionCategory(object):
     def high_level_category_id(self, high_level_category_id):
         """Sets the high_level_category_id of this TransactionCategory.
 
-        The unique identifier of the high level category.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        The unique identifier of the high level category.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :param high_level_category_id: The high_level_category_id of this TransactionCategory.  # noqa: E501
         :type: int
@@ -170,7 +170,7 @@ class TransactionCategory(object):
     def detail_category(self):
         """Gets the detail_category of this TransactionCategory.  # noqa: E501
 
-        Entity that provides detail category attributes<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Entity that provides detail category attributes<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :return: The detail_category of this TransactionCategory.  # noqa: E501
         :rtype: list[DetailCategory]
@@ -181,7 +181,7 @@ class TransactionCategory(object):
     def detail_category(self, detail_category):
         """Sets the detail_category of this TransactionCategory.
 
-        Entity that provides detail category attributes<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Entity that provides detail category attributes<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :param detail_category: The detail_category of this TransactionCategory.  # noqa: E501
         :type: list[DetailCategory]
@@ -193,7 +193,7 @@ class TransactionCategory(object):
     def id(self):
         """Gets the id of this TransactionCategory.  # noqa: E501
 
-        Unique identifier of the category.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Unique identifier of the category.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :return: The id of this TransactionCategory.  # noqa: E501
         :rtype: int
@@ -204,7 +204,7 @@ class TransactionCategory(object):
     def id(self, id):
         """Sets the id of this TransactionCategory.
 
-        Unique identifier of the category.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        Unique identifier of the category.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :param id: The id of this TransactionCategory.  # noqa: E501
         :type: int
@@ -216,7 +216,7 @@ class TransactionCategory(object):
     def source(self):
         """Gets the source of this TransactionCategory.  # noqa: E501
 
-        Source used to identify whether the transaction category is user defined category or system created category.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br><b>Applicable Values</b><br>  # noqa: E501
+        Source used to identify whether the transaction category is user defined category or system created category.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br><b>Applicable Values</b><br>  # noqa: E501
 
         :return: The source of this TransactionCategory.  # noqa: E501
         :rtype: str
@@ -227,7 +227,7 @@ class TransactionCategory(object):
     def source(self, source):
         """Sets the source of this TransactionCategory.
 
-        Source used to identify whether the transaction category is user defined category or system created category.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br><b>Applicable Values</b><br>  # noqa: E501
+        Source used to identify whether the transaction category is user defined category or system created category.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br><b>Applicable Values</b><br>  # noqa: E501
 
         :param source: The source of this TransactionCategory.  # noqa: E501
         :type: str
@@ -246,7 +246,7 @@ class TransactionCategory(object):
     def category(self):
         """Gets the category of this TransactionCategory.  # noqa: E501
 
-        The name of the category.<br><b>Note</b>: Transaction categorization is one of the core features offered by Yodlee and the categories are assigned to the transactions by the system. Transactions can be clubbed together by the category that is assigned to them.  <br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        The name of the category.<br><b>Note</b>: Transaction categorization is one of the core features offered by Yodlee and the categories are assigned to the transactions by the system. Transactions can be clubbed together by the category that is assigned to them.  <br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :return: The category of this TransactionCategory.  # noqa: E501
         :rtype: str
@@ -257,7 +257,7 @@ class TransactionCategory(object):
     def category(self, category):
         """Sets the category of this TransactionCategory.
 
-        The name of the category.<br><b>Note</b>: Transaction categorization is one of the core features offered by Yodlee and the categories are assigned to the transactions by the system. Transactions can be clubbed together by the category that is assigned to them.  <br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br>  # noqa: E501
+        The name of the category.<br><b>Note</b>: Transaction categorization is one of the core features offered by Yodlee and the categories are assigned to the transactions by the system. Transactions can be clubbed together by the category that is assigned to them.  <br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br>  # noqa: E501
 
         :param category: The category of this TransactionCategory.  # noqa: E501
         :type: str
@@ -269,7 +269,7 @@ class TransactionCategory(object):
     def classification(self):
         """Gets the classification of this TransactionCategory.  # noqa: E501
 
-        Category Classification.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br><b>Applicable Values</b><br>  # noqa: E501
+        Category Classification.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br><b>Applicable Values</b><br>  # noqa: E501
 
         :return: The classification of this TransactionCategory.  # noqa: E501
         :rtype: str
@@ -280,7 +280,7 @@ class TransactionCategory(object):
     def classification(self, classification):
         """Sets the classification of this TransactionCategory.
 
-        Category Classification.<br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br><b>Applicable Values</b><br>  # noqa: E501
+        Category Classification.<br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br><b>Applicable Values</b><br>  # noqa: E501
 
         :param classification: The classification of this TransactionCategory.  # noqa: E501
         :type: str
@@ -299,7 +299,7 @@ class TransactionCategory(object):
     def type(self):
         """Gets the type of this TransactionCategory.  # noqa: E501
 
-        Transaction categories and high-level categories are further mapped to five transaction category types. Customers, based on their needs can either use the transaction categories, the high-level categories, or the transaction category types. <br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br><b>Applicable Values</b><br>  # noqa: E501
+        Transaction categories and high-level categories are further mapped to five transaction category types. Customers, based on their needs can either use the transaction categories, the high-level categories, or the transaction category types. <br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br><b>Applicable Values</b><br>  # noqa: E501
 
         :return: The type of this TransactionCategory.  # noqa: E501
         :rtype: str
@@ -310,7 +310,7 @@ class TransactionCategory(object):
     def type(self, type):
         """Sets the type of this TransactionCategory.
 
-        Transaction categories and high-level categories are further mapped to five transaction category types. Customers, based on their needs can either use the transaction categories, the high-level categories, or the transaction category types. <br><br><b>Applicable containers</b>: bill, creditCard, investment, insurance, loan<br><b>Applicable Values</b><br>  # noqa: E501
+        Transaction categories and high-level categories are further mapped to five transaction category types. Customers, based on their needs can either use the transaction categories, the high-level categories, or the transaction category types. <br><br><b>Applicable containers</b>: creditCard, investment, insurance, loan<br><b>Applicable Values</b><br>  # noqa: E501
 
         :param type: The type of this TransactionCategory.  # noqa: E501
         :type: str

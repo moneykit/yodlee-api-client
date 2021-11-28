@@ -11,6 +11,7 @@ Method | HTTP request | Description
 [**get_all_accounts**](AccountsApi.md#get_all_accounts) | **GET** /accounts | Get Accounts
 [**get_associated_accounts**](AccountsApi.md#get_associated_accounts) | **GET** /accounts/associatedAccounts/{providerAccountId} | Associated Accounts
 [**get_historical_balances**](AccountsApi.md#get_historical_balances) | **GET** /accounts/historicalBalances | Get Historical Balances
+[**get_latest_balances**](AccountsApi.md#get_latest_balances) | **GET** /accounts/latestBalances | Get Latest Balances
 [**migrate_accounts**](AccountsApi.md#migrate_accounts) | **PUT** /accounts/migrateAccounts/{providerAccountId} | Migrate Accounts
 [**update_account**](AccountsApi.md#update_account) | **PUT** /accounts/{accountId} | Update Account
 
@@ -20,7 +21,7 @@ Method | HTTP request | Description
 
 Add Manual Account
 
-The add account service is used to add manual accounts.<br>The response of add account service includes the account name , account number and Yodlee generated account id.<br>All manual accounts added will be included as part of networth calculation by default.<br>Add manual account support is available for bank, card, investment, insurance, loan and bills container only.<br><b>Note:</b> A real estate account addition is only supported for SYSTEM and MANUAL valuation type.<br>
+The add account service is used to add manual accounts.<br>The response of add account service includes the account name , account number and Yodlee generated account id.<br>All manual accounts added will be included as part of networth calculation by default.<br>Add manual account support is available for bank, card, investment, insurance and loan container only.<br><br><b>Note:</b><ul> <li>A real estate account addition is only supported for SYSTEM and MANUAL valuation type.</li></ul>
 
 ### Example
 ```python
@@ -115,7 +116,7 @@ No authorization required
 
 Evaluate Address
 
-Use this service to validate the address before adding the real estate account.<br>If the address is valid, the service will return the complete address information.<br>The response will contain multiple addresses if the user-provided input matches with multiple entries in the vendor database.<br>In the case of multiple matches, the user can select the appropriate address from the list and then invoke the add account service with the complete address.<br><b>Note:</b> Yodlee recommends to use this service before adding the real estate account to avoid failures.<br>
+Use this service to validate the address before adding the real estate account.<br>If the address is valid, the service will return the complete address information.<br>The response will contain multiple addresses if the user-provided input matches with multiple entries in the vendor database.<br>In the case of multiple matches, the user can select the appropriate address from the list and then invoke the add account service with the complete address.<br><br><b>Note:</b> <ul><li>Yodlee recommends to use this service before adding the real estate account to avoid failures.</li></ul>
 
 ### Example
 ```python
@@ -163,7 +164,7 @@ No authorization required
 
 Get Account Details
 
-The get account details service provides detailed information of an account.<br><b>Note:</b><br>fullAccountNumber is deprecated and is replaced with fullAccountNumberList in include parameter and response.
+The get account details service provides detailed information of an account.<br><br><b>Note:</b><li> fullAccountNumber is deprecated and is replaced with fullAccountNumberList in include parameter and response.</li>
 
 ### Example
 ```python
@@ -213,7 +214,7 @@ No authorization required
 
 Get Accounts
 
-The get accounts service provides information about accounts added by the user.<br>By default, this service returns information for active and to be closed accounts.<br>If requestId is provided, the accounts that are updated in the context of the requestId will be provided in the response.<br><b>Note:</b><br>fullAccountNumber is deprecated and is replaced with fullAccountNumberList in include parameter and response.
+The get accounts service provides information about accounts added by the user.<br>By default, this service returns information for active and to be closed accounts.<br>If requestId is provided, the accounts that are updated in the context of the requestId will be provided in the response.<br><br><b>Note:</b><br><ul><li>fullAccountNumber is deprecated and is replaced with fullAccountNumberList in include parameter and response.</li><li>fullAccountNumberList, PII (Personal Identifiable Information) and holder details are not available by default, as it is a premium feature that needs security approval. This will not be available for testing in Sandbox environment.</li></ul>
 
 ### Example
 ```python
@@ -226,7 +227,7 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = yodlee.AccountsApi()
 account_id = 'account_id_example' # str | Comma separated accountIds. (optional)
-container = 'container_example' # str | bank/creditCard/investment/insurance/loan/reward/bill/realEstate/otherAssets/otherLiabilities (optional)
+container = 'container_example' # str | bank/creditCard/investment/insurance/loan/reward/realEstate/otherAssets/otherLiabilities (optional)
 include = 'include_example' # str | profile, holder, fullAccountNumber, fullAccountNumberList, paymentProfile, autoRefresh<br><b>Note:</b>fullAccountNumber is deprecated and is replaced with fullAccountNumberList in include parameter and response. (optional)
 provider_account_id = 'provider_account_id_example' # str | Comma separated providerAccountIds. (optional)
 request_id = 'request_id_example' # str | The unique identifier that returns contextual data (optional)
@@ -245,7 +246,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **account_id** | **str**| Comma separated accountIds. | [optional] 
- **container** | **str**| bank/creditCard/investment/insurance/loan/reward/bill/realEstate/otherAssets/otherLiabilities | [optional] 
+ **container** | **str**| bank/creditCard/investment/insurance/loan/reward/realEstate/otherAssets/otherLiabilities | [optional] 
  **include** | **str**| profile, holder, fullAccountNumber, fullAccountNumberList, paymentProfile, autoRefresh&lt;br&gt;&lt;b&gt;Note:&lt;/b&gt;fullAccountNumber is deprecated and is replaced with fullAccountNumberList in include parameter and response. | [optional] 
  **provider_account_id** | **str**| Comma separated providerAccountIds. | [optional] 
  **request_id** | **str**| The unique identifier that returns contextual data | [optional] 
@@ -319,7 +320,7 @@ No authorization required
 
 Get Historical Balances
 
-The historical balances service is used to retrieve the historical balances for an account or a user.<br>Historical balances are daily (D), weekly (W), and monthly (M). <br>The interval input should be passed as D, W, and M to retrieve the desired historical balances. The default interval is daily (D). <br>When no account id is provided, historical balances of the accounts that are active, to be closed, and closed are provided in the response. <br>If the fromDate and toDate are not passed, the last 90 days of data will be provided. <br>The fromDate and toDate should be passed in the YYYY-MM-DD format. <br>The date field in the response denotes the date for which the balance is requested.<br>includeCF needs to be sent as true if the customer wants to return carried forward balances <br>for a date when the data is not available. <br>asofDate field in the response denotes the date as of which the balance was updated for that account.<br>When there is no balance available for a requested date and if includeCF is sent as true, the previous <br>date for which the balance is available is provided in the response. When there is no previous <br>balance available, no data will be sent. <br>
+The historical balances service is used to retrieve the historical balances for an account or a user.<br>Historical balances are daily (D), weekly (W), and monthly (M). <br>The interval input should be passed as D, W, and M to retrieve the desired historical balances. The default interval is daily (D). <br>When no account id is provided, historical balances of the accounts that are active, to be closed, and closed are provided in the response. <br>If the fromDate and toDate are not passed, the last 90 days of data will be provided. <br>The fromDate and toDate should be passed in the YYYY-MM-DD format. <br>The date field in the response denotes the date for which the balance is requested.<br>includeCF needs to be sent as true if the customer wants to return carried forward balances for a date when the data is not available. <br>asofDate field in the response denotes the date as of which the balance was updated for that account.<br>When there is no balance available for a requested date and if includeCF is sent as true, the previous date for which the balance is available is provided in the response. <br>When there is no previous balance available, no data will be sent. <br>By default, pagination is available for the historicalBalances entity in this API. The skip and top parameters are used for pagination. In the skip and top parameters, pass the number of records to be skipped and retrieved, respectively. The response header provides the links to retrieve the next and previous set of historical balances.<br> The API will only retrieve a maximum 500 records by default when values for skip and top parameters are not provided.
 
 ### Example
 ```python
@@ -362,6 +363,56 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**AccountHistoricalBalancesResponse**](AccountHistoricalBalancesResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json;charset=UTF-8
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_latest_balances**
+> AccountBalanceResponse get_latest_balances(account_id, provider_account_id)
+
+Get Latest Balances
+
+The latest balances service provides the latest account balance by initiating a new balance refresh request
+
+### Example
+```python
+from __future__ import print_function
+import time
+import yodlee
+from yodlee.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = yodlee.AccountsApi()
+account_id = 'account_id_example' # str | Comma separated accountIds.
+provider_account_id = 'provider_account_id_example' # str | providerAccountId.
+
+try:
+    # Get Latest Balances
+    api_response = api_instance.get_latest_balances(account_id, provider_account_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling AccountsApi->get_latest_balances: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **account_id** | **str**| Comma separated accountIds. | 
+ **provider_account_id** | **str**| providerAccountId. | 
+
+### Return type
+
+[**AccountBalanceResponse**](AccountBalanceResponse.md)
 
 ### Authorization
 
@@ -427,7 +478,7 @@ No authorization required
 
 Update Account
 
-The update account service is used to update manual and aggregated accounts.<br>The HTTP response code is 204 (Success without content).<br>Update manual account support is available for bank, card, investment, insurance, loan, bills, otherAssets, otherLiabilities and realEstate containers only.<br><b>Note:</b> A real estate account update is only supported for SYSTEM and MANUAL valuation type.<br>
+The update account service is used to update manual and aggregated accounts.<br>The HTTP response code is 204 (Success without content).<br>Update manual account support is available for bank, card, investment, insurance, loan, otherAssets, otherLiabilities and realEstate containers only.<br><br><b>Note:</b><li> A real estate account update is only supported for SYSTEM and MANUAL valuation type.</li><li> Attribute <b>isEbillEnrolled</b> is deprecated as it is applicable for bill accounts only.</li>
 
 ### Example
 ```python

@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 Get Asset Classification List
 
-The get asset classifications list service is used to get the supported asset classifications. <br>The response includes different classification types like assetClass, country, sector, style, etc., <br>and the values corresponding to each type.<br>
+The get asset classifications list service is used to get the supported asset classifications. <br>The response includes different classification types like assetClass, country, sector, style, etc. and the values corresponding to each type.<br>
 
 ### Example
 ```python
@@ -59,7 +59,7 @@ No authorization required
 
 Get Holding Type List
 
-The get holding types list service is used to get the supported holding types.<br>The response includes different holding types such as future, moneyMarketFund, stock, etc.<br>and it returns the supported holding types <br>
+The get holding types list service is used to get the supported holding types.<br>The response includes different holding types such as future, moneyMarketFund, stock, etc. and it returns the supported holding types <br>
 
 ### Example
 ```python
@@ -103,7 +103,7 @@ No authorization required
 
 Get Holdings
 
-The get holdings service is used to get the list of holdings of a user.<br>Supported holding types can be employeeStockOption, <br>moneyMarketFund, bond, etc. and is obtained using get holding type list service. <br>Asset classifications for the holdings need to be requested through the \"include\" parameter.<br>Asset classification information for holdings are not available by default, as it is a premium feature.<br>
+The get holdings service is used to get the list of holdings of a user.<br>Supported holding types can be employeeStockOption, moneyMarketFund, bond, etc. and is obtained using get holding type list service. <br>Asset classifications for the holdings need to be requested through the \"include\" parameter.<br>Asset classification information for holdings are not available by default, as it is a premium feature.<br>
 
 ### Example
 ```python

@@ -5,7 +5,7 @@
 """
     Yodlee Core APIs
 
-    This file describes the Yodlee Platform APIs, using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. You can generate a client SDK for Python, Java, javascript, PHP or other languages according to your development needs. For more details about our APIs themselves, please refer to https://developer.yodlee.com/Yodlee_API/.  # noqa: E501
+    This file describes the Yodlee Platform APIs using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. Yodlee supports the Java SDK and it is available <a href=\"https://developer.yodlee.com/java-sdk-overview \">here</a>. You can generate a client SDK for Python, Java, JavaScript, PHP, or other languages according to your development needs. For more details about the APIs, refer to <a href=\"https://developer.yodlee.com/docs/api/1.1/Overview\">Yodlee API v1.1 - Overview</a>.<br><br>You will have to set the header before making the API call. The following headers apply to all the APIs:<ul><li>Authorization: This header holds the access token</li> <li> Api-Version: 1.1</li></ul><b>Note</b>: If there are any API-specific headers, they are mentioned explicitly in the respective API's description.  # noqa: E501
 
     OpenAPI spec version: 1.1.0
     Contact: developer@yodlee.com
@@ -42,10 +42,12 @@ from yodlee.configuration import Configuration
 from yodlee.models.access_tokens import AccessTokens
 from yodlee.models.account import Account
 from yodlee.models.account_address import AccountAddress
+from yodlee.models.account_balance_response import AccountBalanceResponse
 from yodlee.models.account_dataset import AccountDataset
 from yodlee.models.account_historical_balances_response import AccountHistoricalBalancesResponse
 from yodlee.models.account_history import AccountHistory
 from yodlee.models.account_holder import AccountHolder
+from yodlee.models.account_latest_balance import AccountLatestBalance
 from yodlee.models.account_migration_response import AccountMigrationResponse
 from yodlee.models.account_profile import AccountProfile
 from yodlee.models.account_response import AccountResponse

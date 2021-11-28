@@ -3,7 +3,7 @@
 """
     Yodlee Core APIs
 
-    This file describes the Yodlee Platform APIs, using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. You can generate a client SDK for Python, Java, javascript, PHP or other languages according to your development needs. For more details about our APIs themselves, please refer to https://developer.yodlee.com/Yodlee_API/.  # noqa: E501
+    This file describes the Yodlee Platform APIs using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. Yodlee supports the Java SDK and it is available <a href=\"https://developer.yodlee.com/java-sdk-overview \">here</a>. You can generate a client SDK for Python, Java, JavaScript, PHP, or other languages according to your development needs. For more details about the APIs, refer to <a href=\"https://developer.yodlee.com/docs/api/1.1/Overview\">Yodlee API v1.1 - Overview</a>.<br><br>You will have to set the header before making the API call. The following headers apply to all the APIs:<ul><li>Authorization: This header holds the access token</li> <li> Api-Version: 1.1</li></ul><b>Note</b>: If there are any API-specific headers, they are mentioned explicitly in the respective API's description.  # noqa: E501
 
     OpenAPI spec version: 1.1.0
     Contact: developer@yodlee.com
@@ -36,7 +36,7 @@ class ProviderAccountsApi(object):
     def delete_provider_account(self, provider_account_id, **kwargs):  # noqa: E501
         """Delete Provider Account  # noqa: E501
 
-        The delete provider account service is used to delete a provider account <br>from the Yodlee system. This service also deletes the accounts that are created in the <br>Yodlee system for that provider account. This service does not return a response. <br>The HTTP response code is 204 (Success with no content).<br>  # noqa: E501
+        The delete provider account service is used to delete a provider account from the Yodlee system. This service also deletes the accounts that are created in the Yodlee system for that provider account. <br>This service does not return a response. The HTTP response code is 204 (Success with no content).<br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_provider_account(provider_account_id, async_req=True)
@@ -58,7 +58,7 @@ class ProviderAccountsApi(object):
     def delete_provider_account_with_http_info(self, provider_account_id, **kwargs):  # noqa: E501
         """Delete Provider Account  # noqa: E501
 
-        The delete provider account service is used to delete a provider account <br>from the Yodlee system. This service also deletes the accounts that are created in the <br>Yodlee system for that provider account. This service does not return a response. <br>The HTTP response code is 204 (Success with no content).<br>  # noqa: E501
+        The delete provider account service is used to delete a provider account from the Yodlee system. This service also deletes the accounts that are created in the Yodlee system for that provider account. <br>This service does not return a response. The HTTP response code is 204 (Success with no content).<br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.delete_provider_account_with_http_info(provider_account_id, async_req=True)
@@ -329,7 +329,7 @@ class ProviderAccountsApi(object):
     def get_provider_account(self, provider_account_id, **kwargs):  # noqa: E501
         """Get Provider Account Details  # noqa: E501
 
-        The get provider account details service is used to learn the status of adding accounts and updating accounts.<br>This service has to be called continuously to know the progress level of the triggered process. This service also provides the MFA information requested by the provider site.<br>When include=credentials,questions is passed as input, the service returns the credentials (non-password values) and questions stored in the Yodlee system for that provider account. <br><b>Note:</b> The password and answer fields are not returned in the response.<br>  # noqa: E501
+        The get provider account details service is used to learn the status of adding accounts and updating accounts.<br>This service has to be called continuously to know the progress level of the triggered process. This service also provides the MFA information requested by the provider site.<br>When <i>include = credentials</i>, questions is passed as input, the service returns the credentials (non-password values) and questions stored in the Yodlee system for that provider account. <br><br><b>Note:</b> <li>The password and answer fields are not returned in the response.</li>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_provider_account(provider_account_id, async_req=True)
@@ -353,7 +353,7 @@ class ProviderAccountsApi(object):
     def get_provider_account_with_http_info(self, provider_account_id, **kwargs):  # noqa: E501
         """Get Provider Account Details  # noqa: E501
 
-        The get provider account details service is used to learn the status of adding accounts and updating accounts.<br>This service has to be called continuously to know the progress level of the triggered process. This service also provides the MFA information requested by the provider site.<br>When include=credentials,questions is passed as input, the service returns the credentials (non-password values) and questions stored in the Yodlee system for that provider account. <br><b>Note:</b> The password and answer fields are not returned in the response.<br>  # noqa: E501
+        The get provider account details service is used to learn the status of adding accounts and updating accounts.<br>This service has to be called continuously to know the progress level of the triggered process. This service also provides the MFA information requested by the provider site.<br>When <i>include = credentials</i>, questions is passed as input, the service returns the credentials (non-password values) and questions stored in the Yodlee system for that provider account. <br><br><b>Note:</b> <li>The password and answer fields are not returned in the response.</li>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_provider_account_with_http_info(provider_account_id, async_req=True)

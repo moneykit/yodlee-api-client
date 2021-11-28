@@ -3,7 +3,7 @@
 """
     Yodlee Core APIs
 
-    This file describes the Yodlee Platform APIs, using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. You can generate a client SDK for Python, Java, javascript, PHP or other languages according to your development needs. For more details about our APIs themselves, please refer to https://developer.yodlee.com/Yodlee_API/.  # noqa: E501
+    This file describes the Yodlee Platform APIs using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. Yodlee supports the Java SDK and it is available <a href=\"https://developer.yodlee.com/java-sdk-overview \">here</a>. You can generate a client SDK for Python, Java, JavaScript, PHP, or other languages according to your development needs. For more details about the APIs, refer to <a href=\"https://developer.yodlee.com/docs/api/1.1/Overview\">Yodlee API v1.1 - Overview</a>.<br><br>You will have to set the header before making the API call. The following headers apply to all the APIs:<ul><li>Authorization: This header holds the access token</li> <li> Api-Version: 1.1</li></ul><b>Note</b>: If there are any API-specific headers, they are mentioned explicitly in the respective API's description.  # noqa: E501
 
     OpenAPI spec version: 1.1.0
     Contact: developer@yodlee.com
@@ -43,6 +43,7 @@ class DataExtractsTransaction(object):
         'memo': 'str',
         'settle_date': 'str',
         'type': 'str',
+        'intermediary': 'list[str]',
         'base_type': 'str',
         'category_source': 'str',
         'principal': 'Money',
@@ -52,8 +53,10 @@ class DataExtractsTransaction(object):
         'price': 'Money',
         'commission': 'Money',
         'id': 'int',
+        'merchant_type': 'str',
         'amount': 'Money',
         'check_number': 'str',
+        'is_physical': 'bool',
         'quantity': 'float',
         'valoren': 'str',
         'is_manual': 'bool',
@@ -87,6 +90,7 @@ class DataExtractsTransaction(object):
         'memo': 'memo',
         'settle_date': 'settleDate',
         'type': 'type',
+        'intermediary': 'intermediary',
         'base_type': 'baseType',
         'category_source': 'categorySource',
         'principal': 'principal',
@@ -96,8 +100,10 @@ class DataExtractsTransaction(object):
         'price': 'price',
         'commission': 'commission',
         'id': 'id',
+        'merchant_type': 'merchantType',
         'amount': 'amount',
         'check_number': 'checkNumber',
+        'is_physical': 'isPhysical',
         'quantity': 'quantity',
         'valoren': 'valoren',
         'is_manual': 'isManual',
@@ -120,7 +126,7 @@ class DataExtractsTransaction(object):
         'status': 'status'
     }
 
-    def __init__(self, _date=None, source_id=None, symbol=None, cusip_number=None, high_level_category_id=None, detail_category_id=None, description=None, memo=None, settle_date=None, type=None, base_type=None, category_source=None, principal=None, last_updated=None, is_deleted=None, interest=None, price=None, commission=None, id=None, amount=None, check_number=None, quantity=None, valoren=None, is_manual=None, merchant=None, sedol=None, transaction_date=None, category_type=None, account_id=None, created_date=None, source_type=None, container=None, post_date=None, parent_category_id=None, sub_type=None, category=None, running_balance=None, category_id=None, holding_description=None, isin=None, status=None, _configuration=None):  # noqa: E501
+    def __init__(self, _date=None, source_id=None, symbol=None, cusip_number=None, high_level_category_id=None, detail_category_id=None, description=None, memo=None, settle_date=None, type=None, intermediary=None, base_type=None, category_source=None, principal=None, last_updated=None, is_deleted=None, interest=None, price=None, commission=None, id=None, merchant_type=None, amount=None, check_number=None, is_physical=None, quantity=None, valoren=None, is_manual=None, merchant=None, sedol=None, transaction_date=None, category_type=None, account_id=None, created_date=None, source_type=None, container=None, post_date=None, parent_category_id=None, sub_type=None, category=None, running_balance=None, category_id=None, holding_description=None, isin=None, status=None, _configuration=None):  # noqa: E501
         """DataExtractsTransaction - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
@@ -136,6 +142,7 @@ class DataExtractsTransaction(object):
         self._memo = None
         self._settle_date = None
         self._type = None
+        self._intermediary = None
         self._base_type = None
         self._category_source = None
         self._principal = None
@@ -145,8 +152,10 @@ class DataExtractsTransaction(object):
         self._price = None
         self._commission = None
         self._id = None
+        self._merchant_type = None
         self._amount = None
         self._check_number = None
+        self._is_physical = None
         self._quantity = None
         self._valoren = None
         self._is_manual = None
@@ -189,6 +198,8 @@ class DataExtractsTransaction(object):
             self.settle_date = settle_date
         if type is not None:
             self.type = type
+        if intermediary is not None:
+            self.intermediary = intermediary
         if base_type is not None:
             self.base_type = base_type
         if category_source is not None:
@@ -207,10 +218,14 @@ class DataExtractsTransaction(object):
             self.commission = commission
         if id is not None:
             self.id = id
+        if merchant_type is not None:
+            self.merchant_type = merchant_type
         if amount is not None:
             self.amount = amount
         if check_number is not None:
             self.check_number = check_number
+        if is_physical is not None:
+            self.is_physical = is_physical
         if quantity is not None:
             self.quantity = quantity
         if valoren is not None:
@@ -483,6 +498,29 @@ class DataExtractsTransaction(object):
         self._type = type
 
     @property
+    def intermediary(self):
+        """Gets the intermediary of this DataExtractsTransaction.  # noqa: E501
+
+        The intermediary of the transaction.<br><br><b>Applicable containers</b>:  bank,creditCard,investment,loan<br>  # noqa: E501
+
+        :return: The intermediary of this DataExtractsTransaction.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._intermediary
+
+    @intermediary.setter
+    def intermediary(self, intermediary):
+        """Sets the intermediary of this DataExtractsTransaction.
+
+        The intermediary of the transaction.<br><br><b>Applicable containers</b>:  bank,creditCard,investment,loan<br>  # noqa: E501
+
+        :param intermediary: The intermediary of this DataExtractsTransaction.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._intermediary = intermediary
+
+    @property
     def base_type(self):
         """Gets the base_type of this DataExtractsTransaction.  # noqa: E501
 
@@ -702,6 +740,29 @@ class DataExtractsTransaction(object):
         self._id = id
 
     @property
+    def merchant_type(self):
+        """Gets the merchant_type of this DataExtractsTransaction.  # noqa: E501
+
+        Indicates the merchantType of the transaction.e.g:-BILLERS,SUBSCRIPTION,OTHERS <br><br><b>Applicable containers</b>: bank,creditCard,investment,loan<br>  # noqa: E501
+
+        :return: The merchant_type of this DataExtractsTransaction.  # noqa: E501
+        :rtype: str
+        """
+        return self._merchant_type
+
+    @merchant_type.setter
+    def merchant_type(self, merchant_type):
+        """Sets the merchant_type of this DataExtractsTransaction.
+
+        Indicates the merchantType of the transaction.e.g:-BILLERS,SUBSCRIPTION,OTHERS <br><br><b>Applicable containers</b>: bank,creditCard,investment,loan<br>  # noqa: E501
+
+        :param merchant_type: The merchant_type of this DataExtractsTransaction.  # noqa: E501
+        :type: str
+        """
+
+        self._merchant_type = merchant_type
+
+    @property
     def amount(self):
         """Gets the amount of this DataExtractsTransaction.  # noqa: E501
 
@@ -746,6 +807,29 @@ class DataExtractsTransaction(object):
         """
 
         self._check_number = check_number
+
+    @property
+    def is_physical(self):
+        """Gets the is_physical of this DataExtractsTransaction.  # noqa: E501
+
+        Indicates if the transaction is happened online or in-store. <br><br><b>Applicable containers</b>: bank,creditCard,investment,loan<br>  # noqa: E501
+
+        :return: The is_physical of this DataExtractsTransaction.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_physical
+
+    @is_physical.setter
+    def is_physical(self, is_physical):
+        """Sets the is_physical of this DataExtractsTransaction.
+
+        Indicates if the transaction is happened online or in-store. <br><br><b>Applicable containers</b>: bank,creditCard,investment,loan<br>  # noqa: E501
+
+        :param is_physical: The is_physical of this DataExtractsTransaction.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_physical = is_physical
 
     @property
     def quantity(self):

@@ -3,7 +3,7 @@
 """
     Yodlee Core APIs
 
-    This file describes the Yodlee Platform APIs, using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. You can generate a client SDK for Python, Java, javascript, PHP or other languages according to your development needs. For more details about our APIs themselves, please refer to https://developer.yodlee.com/Yodlee_API/.  # noqa: E501
+    This file describes the Yodlee Platform APIs using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. Yodlee supports the Java SDK and it is available <a href=\"https://developer.yodlee.com/java-sdk-overview \">here</a>. You can generate a client SDK for Python, Java, JavaScript, PHP, or other languages according to your development needs. For more details about the APIs, refer to <a href=\"https://developer.yodlee.com/docs/api/1.1/Overview\">Yodlee API v1.1 - Overview</a>.<br><br>You will have to set the header before making the API call. The following headers apply to all the APIs:<ul><li>Authorization: This header holds the access token</li> <li> Api-Version: 1.1</li></ul><b>Note</b>: If there are any API-specific headers, they are mentioned explicitly in the respective API's description.  # noqa: E501
 
     OpenAPI spec version: 1.1.0
     Contact: developer@yodlee.com
@@ -36,7 +36,7 @@ class UserApi(object):
     def get_access_tokens(self, app_ids, **kwargs):  # noqa: E501
         """Get Access Tokens  # noqa: E501
 
-        The Get Access Tokens service is used to retrieve the access tokens for the application id(s) provided.<br>URL in the response can be used to launch the application for which token is requested.<br><b>Note:</b> This endpoint is deprecated for customers using the API Key-based authentication <br>and is applicable only to customers who use the SAML-based authentication.<br>  # noqa: E501
+        The Get Access Tokens service is used to retrieve the access tokens for the application id(s) provided.<br>URL in the response can be used to launch the application for which token is requested.<br><br><b>Note:</b> <li>This endpoint is deprecated for customers using the API Key-based authentication and is applicable only to customers who use the SAML-based authentication.<br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_access_tokens(app_ids, async_req=True)
@@ -58,7 +58,7 @@ class UserApi(object):
     def get_access_tokens_with_http_info(self, app_ids, **kwargs):  # noqa: E501
         """Get Access Tokens  # noqa: E501
 
-        The Get Access Tokens service is used to retrieve the access tokens for the application id(s) provided.<br>URL in the response can be used to launch the application for which token is requested.<br><b>Note:</b> This endpoint is deprecated for customers using the API Key-based authentication <br>and is applicable only to customers who use the SAML-based authentication.<br>  # noqa: E501
+        The Get Access Tokens service is used to retrieve the access tokens for the application id(s) provided.<br>URL in the response can be used to launch the application for which token is requested.<br><br><b>Note:</b> <li>This endpoint is deprecated for customers using the API Key-based authentication and is applicable only to customers who use the SAML-based authentication.<br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_access_tokens_with_http_info(app_ids, async_req=True)
@@ -131,7 +131,7 @@ class UserApi(object):
     def get_user(self, **kwargs):  # noqa: E501
         """Get User Details  # noqa: E501
 
-        The get user details service is used to get the user profile information and the application <br>preferences set at the time of user registration.<br>  # noqa: E501
+        The get user details service is used to get the user profile information and the application preferences set at the time of user registration.<br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_user(async_req=True)
@@ -152,7 +152,7 @@ class UserApi(object):
     def get_user_with_http_info(self, **kwargs):  # noqa: E501
         """Get User Details  # noqa: E501
 
-        The get user details service is used to get the user profile information and the application <br>preferences set at the time of user registration.<br>  # noqa: E501
+        The get user details service is used to get the user profile information and the application preferences set at the time of user registration.<br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_user_with_http_info(async_req=True)
@@ -218,7 +218,7 @@ class UserApi(object):
     def register_user(self, user_request, **kwargs):  # noqa: E501
         """Register User  # noqa: E501
 
-        The register user service is used to register a user in Yodlee.<br>The loginName cannot include spaces and must be between 3 and 150 characters.<br>locale passed must be one of the supported locales for the customer. <br>Currency provided in the input will be respected in the derived services and the amount fields in the response will be provided in the preferred currency.<br>userParam is accepted as a body parameter. <br><b>Note:</b> user.password is no longer supported.<br>The content type has to be passed as application/json for the body parameter.<br>  # noqa: E501
+        The register user service is used to register a user in Yodlee.<br>The loginName cannot include spaces and must be between 3 and 150 characters.<br>locale passed must be one of the supported locales for the customer. <br>Currency provided in the input will be respected in the derived services and the amount fields in the response will be provided in the preferred currency.<br>userParam is accepted as a body parameter. <br><br><b>Note:</b> <li>The content type has to be passed as application/json for the body parameter.</li>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.register_user(user_request, async_req=True)
@@ -240,7 +240,7 @@ class UserApi(object):
     def register_user_with_http_info(self, user_request, **kwargs):  # noqa: E501
         """Register User  # noqa: E501
 
-        The register user service is used to register a user in Yodlee.<br>The loginName cannot include spaces and must be between 3 and 150 characters.<br>locale passed must be one of the supported locales for the customer. <br>Currency provided in the input will be respected in the derived services and the amount fields in the response will be provided in the preferred currency.<br>userParam is accepted as a body parameter. <br><b>Note:</b> user.password is no longer supported.<br>The content type has to be passed as application/json for the body parameter.<br>  # noqa: E501
+        The register user service is used to register a user in Yodlee.<br>The loginName cannot include spaces and must be between 3 and 150 characters.<br>locale passed must be one of the supported locales for the customer. <br>Currency provided in the input will be respected in the derived services and the amount fields in the response will be provided in the preferred currency.<br>userParam is accepted as a body parameter. <br><br><b>Note:</b> <li>The content type has to be passed as application/json for the body parameter.</li>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.register_user_with_http_info(user_request, async_req=True)
@@ -317,7 +317,7 @@ class UserApi(object):
     def saml_login(self, issuer, saml_response, **kwargs):  # noqa: E501
         """Saml Login  # noqa: E501
 
-        The SAML login service is used to authenticate system users with a SAML response.<br>A new user will be created with the input provided if that user isn't already in the system.<br>For existing users, the system will make updates based on changes or new information.<br>When authentication is successful, a user session token is returned.<br><b>Note:</b> The content type has to be passed as application/x-www-form-urlencoded. <br>issuer, source and samlResponse should be passed as body parameters.<br>  # noqa: E501
+        The SAML login service is used to authenticate system users with a SAML response.<br>A new user will be created with the input provided if that user isn't already in the system.<br>For existing users, the system will make updates based on changes or new information.<br>When authentication is successful, a user session token is returned.<br><br><b>Note:</b> <li>The content type has to be passed as application/x-www-form-urlencoded. <li>issuer, source and samlResponse should be passed as body parameters.</li>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.saml_login(issuer, saml_response, async_req=True)
@@ -341,7 +341,7 @@ class UserApi(object):
     def saml_login_with_http_info(self, issuer, saml_response, **kwargs):  # noqa: E501
         """Saml Login  # noqa: E501
 
-        The SAML login service is used to authenticate system users with a SAML response.<br>A new user will be created with the input provided if that user isn't already in the system.<br>For existing users, the system will make updates based on changes or new information.<br>When authentication is successful, a user session token is returned.<br><b>Note:</b> The content type has to be passed as application/x-www-form-urlencoded. <br>issuer, source and samlResponse should be passed as body parameters.<br>  # noqa: E501
+        The SAML login service is used to authenticate system users with a SAML response.<br>A new user will be created with the input provided if that user isn't already in the system.<br>For existing users, the system will make updates based on changes or new information.<br>When authentication is successful, a user session token is returned.<br><br><b>Note:</b> <li>The content type has to be passed as application/x-www-form-urlencoded. <li>issuer, source and samlResponse should be passed as body parameters.</li>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.saml_login_with_http_info(issuer, saml_response, async_req=True)
@@ -515,7 +515,7 @@ class UserApi(object):
     def update_user(self, user_request, **kwargs):  # noqa: E501
         """Update User Details  # noqa: E501
 
-        The update user details service is used to update user details like name, address, currency preference, etc.<br>Currency provided in the input will be respected in the <a href=\"https://developer.yodlee.com/apidocs/index.php#!/derived\">derived</a> services and the amount fields in the response will be provided in the preferred currency.<br>The HTTP response code is 204 (Success without content). <br>  # noqa: E501
+        The update user details service is used to update user details like name, address, currency preference, etc.<br>Currency provided in the input will be respected in the <a href=\"https://developer.yodlee.com/api-reference#tag/Derived\">derived</a> services and the amount fields in the response will be provided in the preferred currency.<br>The HTTP response code is 204 (Success without content). <br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_user(user_request, async_req=True)
@@ -537,7 +537,7 @@ class UserApi(object):
     def update_user_with_http_info(self, user_request, **kwargs):  # noqa: E501
         """Update User Details  # noqa: E501
 
-        The update user details service is used to update user details like name, address, currency preference, etc.<br>Currency provided in the input will be respected in the <a href=\"https://developer.yodlee.com/apidocs/index.php#!/derived\">derived</a> services and the amount fields in the response will be provided in the preferred currency.<br>The HTTP response code is 204 (Success without content). <br>  # noqa: E501
+        The update user details service is used to update user details like name, address, currency preference, etc.<br>Currency provided in the input will be respected in the <a href=\"https://developer.yodlee.com/api-reference#tag/Derived\">derived</a> services and the amount fields in the response will be provided in the preferred currency.<br>The HTTP response code is 204 (Success without content). <br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.update_user_with_http_info(user_request, async_req=True)

@@ -3,7 +3,7 @@
 """
     Yodlee Core APIs
 
-    This file describes the Yodlee Platform APIs, using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. You can generate a client SDK for Python, Java, javascript, PHP or other languages according to your development needs. For more details about our APIs themselves, please refer to https://developer.yodlee.com/Yodlee_API/.  # noqa: E501
+    This file describes the Yodlee Platform APIs using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. Yodlee supports the Java SDK and it is available <a href=\"https://developer.yodlee.com/java-sdk-overview \">here</a>. You can generate a client SDK for Python, Java, JavaScript, PHP, or other languages according to your development needs. For more details about the APIs, refer to <a href=\"https://developer.yodlee.com/docs/api/1.1/Overview\">Yodlee API v1.1 - Overview</a>.<br><br>You will have to set the header before making the API call. The following headers apply to all the APIs:<ul><li>Authorization: This header holds the access token</li> <li> Api-Version: 1.1</li></ul><b>Note</b>: If there are any API-specific headers, they are mentioned explicitly in the respective API's description.  # noqa: E501
 
     OpenAPI spec version: 1.1.0
     Contact: developer@yodlee.com
@@ -36,7 +36,7 @@ class HoldingsApi(object):
     def get_asset_classification_list(self, **kwargs):  # noqa: E501
         """Get Asset Classification List  # noqa: E501
 
-        The get asset classifications list service is used to get the supported asset classifications. <br>The response includes different classification types like assetClass, country, sector, style, etc., <br>and the values corresponding to each type.<br>  # noqa: E501
+        The get asset classifications list service is used to get the supported asset classifications. <br>The response includes different classification types like assetClass, country, sector, style, etc. and the values corresponding to each type.<br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_asset_classification_list(async_req=True)
@@ -57,7 +57,7 @@ class HoldingsApi(object):
     def get_asset_classification_list_with_http_info(self, **kwargs):  # noqa: E501
         """Get Asset Classification List  # noqa: E501
 
-        The get asset classifications list service is used to get the supported asset classifications. <br>The response includes different classification types like assetClass, country, sector, style, etc., <br>and the values corresponding to each type.<br>  # noqa: E501
+        The get asset classifications list service is used to get the supported asset classifications. <br>The response includes different classification types like assetClass, country, sector, style, etc. and the values corresponding to each type.<br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_asset_classification_list_with_http_info(async_req=True)
@@ -123,7 +123,7 @@ class HoldingsApi(object):
     def get_holding_type_list(self, **kwargs):  # noqa: E501
         """Get Holding Type List  # noqa: E501
 
-        The get holding types list service is used to get the supported holding types.<br>The response includes different holding types such as future, moneyMarketFund, stock, etc.<br>and it returns the supported holding types <br>  # noqa: E501
+        The get holding types list service is used to get the supported holding types.<br>The response includes different holding types such as future, moneyMarketFund, stock, etc. and it returns the supported holding types <br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_holding_type_list(async_req=True)
@@ -144,7 +144,7 @@ class HoldingsApi(object):
     def get_holding_type_list_with_http_info(self, **kwargs):  # noqa: E501
         """Get Holding Type List  # noqa: E501
 
-        The get holding types list service is used to get the supported holding types.<br>The response includes different holding types such as future, moneyMarketFund, stock, etc.<br>and it returns the supported holding types <br>  # noqa: E501
+        The get holding types list service is used to get the supported holding types.<br>The response includes different holding types such as future, moneyMarketFund, stock, etc. and it returns the supported holding types <br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_holding_type_list_with_http_info(async_req=True)
@@ -210,7 +210,7 @@ class HoldingsApi(object):
     def get_holdings(self, **kwargs):  # noqa: E501
         """Get Holdings  # noqa: E501
 
-        The get holdings service is used to get the list of holdings of a user.<br>Supported holding types can be employeeStockOption, <br>moneyMarketFund, bond, etc. and is obtained using get holding type list service. <br>Asset classifications for the holdings need to be requested through the \"include\" parameter.<br>Asset classification information for holdings are not available by default, as it is a premium feature.<br>  # noqa: E501
+        The get holdings service is used to get the list of holdings of a user.<br>Supported holding types can be employeeStockOption, moneyMarketFund, bond, etc. and is obtained using get holding type list service. <br>Asset classifications for the holdings need to be requested through the \"include\" parameter.<br>Asset classification information for holdings are not available by default, as it is a premium feature.<br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_holdings(async_req=True)
@@ -236,7 +236,7 @@ class HoldingsApi(object):
     def get_holdings_with_http_info(self, **kwargs):  # noqa: E501
         """Get Holdings  # noqa: E501
 
-        The get holdings service is used to get the list of holdings of a user.<br>Supported holding types can be employeeStockOption, <br>moneyMarketFund, bond, etc. and is obtained using get holding type list service. <br>Asset classifications for the holdings need to be requested through the \"include\" parameter.<br>Asset classification information for holdings are not available by default, as it is a premium feature.<br>  # noqa: E501
+        The get holdings service is used to get the list of holdings of a user.<br>Supported holding types can be employeeStockOption, moneyMarketFund, bond, etc. and is obtained using get holding type list service. <br>Asset classifications for the holdings need to be requested through the \"include\" parameter.<br>Asset classification information for holdings are not available by default, as it is a premium feature.<br>  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_holdings_with_http_info(async_req=True)

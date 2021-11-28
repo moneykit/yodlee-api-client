@@ -3,7 +3,7 @@
 """
     Yodlee Core APIs
 
-    This file describes the Yodlee Platform APIs, using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. You can generate a client SDK for Python, Java, javascript, PHP or other languages according to your development needs. For more details about our APIs themselves, please refer to https://developer.yodlee.com/Yodlee_API/.  # noqa: E501
+    This file describes the Yodlee Platform APIs using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. Yodlee supports the Java SDK and it is available <a href=\"https://developer.yodlee.com/java-sdk-overview \">here</a>. You can generate a client SDK for Python, Java, JavaScript, PHP, or other languages according to your development needs. For more details about the APIs, refer to <a href=\"https://developer.yodlee.com/docs/api/1.1/Overview\">Yodlee API v1.1 - Overview</a>.<br><br>You will have to set the header before making the API call. The following headers apply to all the APIs:<ul><li>Authorization: This header holds the access token</li> <li> Api-Version: 1.1</li></ul><b>Note</b>: If there are any API-specific headers, they are mentioned explicitly in the respective API's description.  # noqa: E501
 
     OpenAPI spec version: 1.1.0
     Contact: developer@yodlee.com
@@ -91,7 +91,7 @@ class Document(object):
     def account_id(self):
         """Gets the account_id of this Document.  # noqa: E501
 
-        The unique identifier for the account. The account ID to which the document is linked.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, bills, insurance<br>  # noqa: E501
+        The unique identifier for the account. The account ID to which the document is linked.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The account_id of this Document.  # noqa: E501
         :rtype: int
@@ -102,7 +102,7 @@ class Document(object):
     def account_id(self, account_id):
         """Sets the account_id of this Document.
 
-        The unique identifier for the account. The account ID to which the document is linked.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, bills, insurance<br>  # noqa: E501
+        The unique identifier for the account. The account ID to which the document is linked.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, insurance<br>  # noqa: E501
 
         :param account_id: The account_id of this Document.  # noqa: E501
         :type: int
@@ -114,7 +114,7 @@ class Document(object):
     def last_updated(self):
         """Gets the last_updated of this Document.  # noqa: E501
 
-        Indicates the date and time the document was last updated.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, bills, insurance<br>  # noqa: E501
+        Indicates the date and time the document was last updated.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The last_updated of this Document.  # noqa: E501
         :rtype: str
@@ -125,7 +125,7 @@ class Document(object):
     def last_updated(self, last_updated):
         """Sets the last_updated of this Document.
 
-        Indicates the date and time the document was last updated.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, bills, insurance<br>  # noqa: E501
+        Indicates the date and time the document was last updated.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, insurance<br>  # noqa: E501
 
         :param last_updated: The last_updated of this Document.  # noqa: E501
         :type: str
@@ -137,7 +137,7 @@ class Document(object):
     def form_type(self):
         """Gets the form_type of this Document.  # noqa: E501
 
-        Indicates the type of the tax form.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, bills, insurance<br>  # noqa: E501
+        Indicates the type of the tax form.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The form_type of this Document.  # noqa: E501
         :rtype: str
@@ -148,7 +148,7 @@ class Document(object):
     def form_type(self, form_type):
         """Sets the form_type of this Document.
 
-        Indicates the type of the tax form.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, bills, insurance<br>  # noqa: E501
+        Indicates the type of the tax form.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, insurance<br>  # noqa: E501
 
         :param form_type: The form_type of this Document.  # noqa: E501
         :type: str
@@ -160,7 +160,7 @@ class Document(object):
     def doc_type(self):
         """Gets the doc_type of this Document.  # noqa: E501
 
-        Indicates the type of the document.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, bills, insurance<br>  # noqa: E501
+        Indicates the type of the document.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The doc_type of this Document.  # noqa: E501
         :rtype: str
@@ -171,7 +171,7 @@ class Document(object):
     def doc_type(self, doc_type):
         """Sets the doc_type of this Document.
 
-        Indicates the type of the document.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, bills, insurance<br>  # noqa: E501
+        Indicates the type of the document.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, insurance<br>  # noqa: E501
 
         :param doc_type: The doc_type of this Document.  # noqa: E501
         :type: str
@@ -190,7 +190,7 @@ class Document(object):
     def name(self):
         """Gets the name of this Document.  # noqa: E501
 
-        Indicates the name of the document.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, bills, insurance<br>  # noqa: E501
+        Indicates the name of the document.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The name of this Document.  # noqa: E501
         :rtype: str
@@ -201,7 +201,7 @@ class Document(object):
     def name(self, name):
         """Sets the name of this Document.
 
-        Indicates the name of the document.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, bills, insurance<br>  # noqa: E501
+        Indicates the name of the document.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, insurance<br>  # noqa: E501
 
         :param name: The name of this Document.  # noqa: E501
         :type: str
@@ -213,7 +213,7 @@ class Document(object):
     def id(self):
         """Gets the id of this Document.  # noqa: E501
 
-        The document's primary key and unique identifier.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, bills, insurance<br>  # noqa: E501
+        The document's primary key and unique identifier.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The id of this Document.  # noqa: E501
         :rtype: str
@@ -224,7 +224,7 @@ class Document(object):
     def id(self, id):
         """Sets the id of this Document.
 
-        The document's primary key and unique identifier.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, bills, insurance<br>  # noqa: E501
+        The document's primary key and unique identifier.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, insurance<br>  # noqa: E501
 
         :param id: The id of this Document.  # noqa: E501
         :type: str
@@ -236,7 +236,7 @@ class Document(object):
     def source(self):
         """Gets the source of this Document.  # noqa: E501
 
-        Indicates the source of the document download.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, bills, insurance<br>  # noqa: E501
+        Indicates the source of the document download.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The source of this Document.  # noqa: E501
         :rtype: str
@@ -247,7 +247,7 @@ class Document(object):
     def source(self, source):
         """Sets the source of this Document.
 
-        Indicates the source of the document download.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, bills, insurance<br>  # noqa: E501
+        Indicates the source of the document download.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, insurance<br>  # noqa: E501
 
         :param source: The source of this Document.  # noqa: E501
         :type: str
@@ -259,7 +259,7 @@ class Document(object):
     def status(self):
         """Gets the status of this Document.  # noqa: E501
 
-        Indicates the status of the document download.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, bills, insurance<br>  # noqa: E501
+        Indicates the status of the document download.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The status of this Document.  # noqa: E501
         :rtype: str
@@ -270,7 +270,7 @@ class Document(object):
     def status(self, status):
         """Sets the status of this Document.
 
-        Indicates the status of the document download.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, bills, insurance<br>  # noqa: E501
+        Indicates the status of the document download.<br><br><b>Applicable containers</b>: bank, investment, creditCard, loan, insurance<br>  # noqa: E501
 
         :param status: The status of this Document.  # noqa: E501
         :type: str

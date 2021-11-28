@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 Delete Provider Account
 
-The delete provider account service is used to delete a provider account <br>from the Yodlee system. This service also deletes the accounts that are created in the <br>Yodlee system for that provider account. This service does not return a response. <br>The HTTP response code is 204 (Success with no content).<br>
+The delete provider account service is used to delete a provider account from the Yodlee system. This service also deletes the accounts that are created in the Yodlee system for that provider account. <br>This service does not return a response. The HTTP response code is 204 (Success with no content).<br>
 
 ### Example
 ```python
@@ -165,7 +165,7 @@ No authorization required
 
 Get Provider Account Details
 
-The get provider account details service is used to learn the status of adding accounts and updating accounts.<br>This service has to be called continuously to know the progress level of the triggered process. This service also provides the MFA information requested by the provider site.<br>When include=credentials,questions is passed as input, the service returns the credentials (non-password values) and questions stored in the Yodlee system for that provider account. <br><b>Note:</b> The password and answer fields are not returned in the response.<br>
+The get provider account details service is used to learn the status of adding accounts and updating accounts.<br>This service has to be called continuously to know the progress level of the triggered process. This service also provides the MFA information requested by the provider site.<br>When <i>include = credentials</i>, questions is passed as input, the service returns the credentials (non-password values) and questions stored in the Yodlee system for that provider account. <br><br><b>Note:</b> <li>The password and answer fields are not returned in the response.</li>
 
 ### Example
 ```python

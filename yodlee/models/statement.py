@@ -3,7 +3,7 @@
 """
     Yodlee Core APIs
 
-    This file describes the Yodlee Platform APIs, using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. You can generate a client SDK for Python, Java, javascript, PHP or other languages according to your development needs. For more details about our APIs themselves, please refer to https://developer.yodlee.com/Yodlee_API/.  # noqa: E501
+    This file describes the Yodlee Platform APIs using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. Yodlee supports the Java SDK and it is available <a href=\"https://developer.yodlee.com/java-sdk-overview \">here</a>. You can generate a client SDK for Python, Java, JavaScript, PHP, or other languages according to your development needs. For more details about the APIs, refer to <a href=\"https://developer.yodlee.com/docs/api/1.1/Overview\">Yodlee API v1.1 - Overview</a>.<br><br>You will have to set the header before making the API call. The following headers apply to all the APIs:<ul><li>Authorization: This header holds the access token</li> <li> Api-Version: 1.1</li></ul><b>Note</b>: If there are any API-specific headers, they are mentioned explicitly in the respective API's description.  # noqa: E501
 
     OpenAPI spec version: 1.1.0
     Contact: developer@yodlee.com
@@ -146,7 +146,7 @@ class Statement(object):
     def apr(self):
         """Gets the apr of this Statement.  # noqa: E501
 
-        The APR applied to the balance on the credit card account, as available in the statement.<br><b>Note:</b> In case of variable APR, the APR available on the statement might differ from the APR available at the account-level.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The APR applied to the balance on the credit card account, as available in the statement.<br><b>Note:</b> In case of variable APR, the APR available on the statement might differ from the APR available at the account-level.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The apr of this Statement.  # noqa: E501
         :rtype: float
@@ -157,7 +157,7 @@ class Statement(object):
     def apr(self, apr):
         """Sets the apr of this Statement.
 
-        The APR applied to the balance on the credit card account, as available in the statement.<br><b>Note:</b> In case of variable APR, the APR available on the statement might differ from the APR available at the account-level.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The APR applied to the balance on the credit card account, as available in the statement.<br><b>Note:</b> In case of variable APR, the APR available on the statement might differ from the APR available at the account-level.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param apr: The apr of this Statement.  # noqa: E501
         :type: float
@@ -169,7 +169,7 @@ class Statement(object):
     def cash_apr(self):
         """Gets the cash_apr of this Statement.  # noqa: E501
 
-        The APR applicable to cash withdrawals on the credit card account.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The APR applicable to cash withdrawals on the credit card account.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The cash_apr of this Statement.  # noqa: E501
         :rtype: float
@@ -180,7 +180,7 @@ class Statement(object):
     def cash_apr(self, cash_apr):
         """Sets the cash_apr of this Statement.
 
-        The APR applicable to cash withdrawals on the credit card account.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The APR applicable to cash withdrawals on the credit card account.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param cash_apr: The cash_apr of this Statement.  # noqa: E501
         :type: float
@@ -192,7 +192,7 @@ class Statement(object):
     def billing_period_start(self):
         """Gets the billing_period_start of this Statement.  # noqa: E501
 
-        The start date of the statement period.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The start date of the statement period.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The billing_period_start of this Statement.  # noqa: E501
         :rtype: str
@@ -203,7 +203,7 @@ class Statement(object):
     def billing_period_start(self, billing_period_start):
         """Sets the billing_period_start of this Statement.
 
-        The start date of the statement period.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The start date of the statement period.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param billing_period_start: The billing_period_start of this Statement.  # noqa: E501
         :type: str
@@ -215,7 +215,7 @@ class Statement(object):
     def due_date(self):
         """Gets the due_date of this Statement.  # noqa: E501
 
-        The date by when the minimum payment is due to be paid.<br><b>Note:</b> The due date that appears in the statement may differ from the due date at the account-level.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The date by when the minimum payment is due to be paid.<br><b>Note:</b> The due date that appears in the statement may differ from the due date at the account-level.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The due_date of this Statement.  # noqa: E501
         :rtype: str
@@ -226,7 +226,7 @@ class Statement(object):
     def due_date(self, due_date):
         """Sets the due_date of this Statement.
 
-        The date by when the minimum payment is due to be paid.<br><b>Note:</b> The due date that appears in the statement may differ from the due date at the account-level.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The date by when the minimum payment is due to be paid.<br><b>Note:</b> The due date that appears in the statement may differ from the due date at the account-level.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param due_date: The due_date of this Statement.  # noqa: E501
         :type: str
@@ -238,7 +238,7 @@ class Statement(object):
     def interest_amount(self):
         """Gets the interest_amount of this Statement.  # noqa: E501
 
-        The interest amount that is part of the amount due or the payment amount.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The interest amount that is part of the amount due or the payment amount.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The interest_amount of this Statement.  # noqa: E501
         :rtype: Money
@@ -249,7 +249,7 @@ class Statement(object):
     def interest_amount(self, interest_amount):
         """Sets the interest_amount of this Statement.
 
-        The interest amount that is part of the amount due or the payment amount.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The interest amount that is part of the amount due or the payment amount.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param interest_amount: The interest_amount of this Statement.  # noqa: E501
         :type: Money
@@ -261,7 +261,7 @@ class Statement(object):
     def statement_date(self):
         """Gets the statement_date of this Statement.  # noqa: E501
 
-        The date on which the statement is generated.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The date on which the statement is generated.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The statement_date of this Statement.  # noqa: E501
         :rtype: str
@@ -272,7 +272,7 @@ class Statement(object):
     def statement_date(self, statement_date):
         """Sets the statement_date of this Statement.
 
-        The date on which the statement is generated.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The date on which the statement is generated.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param statement_date: The statement_date of this Statement.  # noqa: E501
         :type: str
@@ -284,7 +284,7 @@ class Statement(object):
     def cash_advance(self):
         """Gets the cash_advance of this Statement.  # noqa: E501
 
-        Cash Advance is the amount that is withdrawn from credit card over the counter or from an ATM up to the available credit/cash limit.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        Cash Advance is the amount that is withdrawn from credit card over the counter or from an ATM up to the available credit/cash limit.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The cash_advance of this Statement.  # noqa: E501
         :rtype: Money
@@ -295,7 +295,7 @@ class Statement(object):
     def cash_advance(self, cash_advance):
         """Sets the cash_advance of this Statement.
 
-        Cash Advance is the amount that is withdrawn from credit card over the counter or from an ATM up to the available credit/cash limit.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        Cash Advance is the amount that is withdrawn from credit card over the counter or from an ATM up to the available credit/cash limit.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param cash_advance: The cash_advance of this Statement.  # noqa: E501
         :type: Money
@@ -307,7 +307,7 @@ class Statement(object):
     def billing_period_end(self):
         """Gets the billing_period_end of this Statement.  # noqa: E501
 
-        The end date of the statement period.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The end date of the statement period.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The billing_period_end of this Statement.  # noqa: E501
         :rtype: str
@@ -318,7 +318,7 @@ class Statement(object):
     def billing_period_end(self, billing_period_end):
         """Sets the billing_period_end of this Statement.
 
-        The end date of the statement period.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The end date of the statement period.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param billing_period_end: The billing_period_end of this Statement.  # noqa: E501
         :type: str
@@ -330,7 +330,7 @@ class Statement(object):
     def principal_amount(self):
         """Gets the principal_amount of this Statement.  # noqa: E501
 
-        The principal amount that is part of the amount due or the payment amount.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The principal amount that is part of the amount due or the payment amount.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The principal_amount of this Statement.  # noqa: E501
         :rtype: Money
@@ -341,7 +341,7 @@ class Statement(object):
     def principal_amount(self, principal_amount):
         """Sets the principal_amount of this Statement.
 
-        The principal amount that is part of the amount due or the payment amount.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The principal amount that is part of the amount due or the payment amount.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param principal_amount: The principal_amount of this Statement.  # noqa: E501
         :type: Money
@@ -353,7 +353,7 @@ class Statement(object):
     def loan_balance(self):
         """Gets the loan_balance of this Statement.  # noqa: E501
 
-        The outstanding principal balance on the loan account.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The outstanding principal balance on the loan account.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The loan_balance of this Statement.  # noqa: E501
         :rtype: Money
@@ -364,7 +364,7 @@ class Statement(object):
     def loan_balance(self, loan_balance):
         """Sets the loan_balance of this Statement.
 
-        The outstanding principal balance on the loan account.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The outstanding principal balance on the loan account.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param loan_balance: The loan_balance of this Statement.  # noqa: E501
         :type: Money
@@ -376,7 +376,7 @@ class Statement(object):
     def amount_due(self):
         """Gets the amount_due of this Statement.  # noqa: E501
 
-        The total amount owed at the end of the billing period.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The total amount owed at the end of the billing period.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The amount_due of this Statement.  # noqa: E501
         :rtype: Money
@@ -387,7 +387,7 @@ class Statement(object):
     def amount_due(self, amount_due):
         """Sets the amount_due of this Statement.
 
-        The total amount owed at the end of the billing period.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The total amount owed at the end of the billing period.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param amount_due: The amount_due of this Statement.  # noqa: E501
         :type: Money
@@ -399,7 +399,7 @@ class Statement(object):
     def account_id(self):
         """Gets the account_id of this Statement.  # noqa: E501
 
-        Account to which the statement belongs to.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        Account to which the statement belongs to.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The account_id of this Statement.  # noqa: E501
         :rtype: int
@@ -410,7 +410,7 @@ class Statement(object):
     def account_id(self, account_id):
         """Sets the account_id of this Statement.
 
-        Account to which the statement belongs to.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        Account to which the statement belongs to.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param account_id: The account_id of this Statement.  # noqa: E501
         :type: int
@@ -422,7 +422,7 @@ class Statement(object):
     def last_updated(self):
         """Gets the last_updated of this Statement.  # noqa: E501
 
-        The date when the account was last updated by Yodlee.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The date when the account was last updated by Yodlee.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The last_updated of this Statement.  # noqa: E501
         :rtype: str
@@ -433,7 +433,7 @@ class Statement(object):
     def last_updated(self, last_updated):
         """Sets the last_updated of this Statement.
 
-        The date when the account was last updated by Yodlee.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The date when the account was last updated by Yodlee.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param last_updated: The last_updated of this Statement.  # noqa: E501
         :type: str
@@ -445,7 +445,7 @@ class Statement(object):
     def is_latest(self):
         """Gets the is_latest of this Statement.  # noqa: E501
 
-        The field is set to true if the statement is the latest generated statement.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The field is set to true if the statement is the latest generated statement.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The is_latest of this Statement.  # noqa: E501
         :rtype: bool
@@ -456,7 +456,7 @@ class Statement(object):
     def is_latest(self, is_latest):
         """Sets the is_latest of this Statement.
 
-        The field is set to true if the statement is the latest generated statement.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The field is set to true if the statement is the latest generated statement.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param is_latest: The is_latest of this Statement.  # noqa: E501
         :type: bool
@@ -468,7 +468,7 @@ class Statement(object):
     def minimum_payment(self):
         """Gets the minimum_payment of this Statement.  # noqa: E501
 
-        <b>Credit Card:</b> The minimum amount that the consumer has to pay every month on the credit card account. Data provides an up-to-date information to the consumer.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        <b>Credit Card:</b> The minimum amount that the consumer has to pay every month on the credit card account. Data provides an up-to-date information to the consumer.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The minimum_payment of this Statement.  # noqa: E501
         :rtype: Money
@@ -479,7 +479,7 @@ class Statement(object):
     def minimum_payment(self, minimum_payment):
         """Sets the minimum_payment of this Statement.
 
-        <b>Credit Card:</b> The minimum amount that the consumer has to pay every month on the credit card account. Data provides an up-to-date information to the consumer.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        <b>Credit Card:</b> The minimum amount that the consumer has to pay every month on the credit card account. Data provides an up-to-date information to the consumer.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param minimum_payment: The minimum_payment of this Statement.  # noqa: E501
         :type: Money
@@ -491,7 +491,7 @@ class Statement(object):
     def last_payment_date(self):
         """Gets the last_payment_date of this Statement.  # noqa: E501
 
-        The date on which the last payment was done during the billing cycle.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The date on which the last payment was done during the billing cycle.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The last_payment_date of this Statement.  # noqa: E501
         :rtype: str
@@ -502,7 +502,7 @@ class Statement(object):
     def last_payment_date(self, last_payment_date):
         """Sets the last_payment_date of this Statement.
 
-        The date on which the last payment was done during the billing cycle.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The date on which the last payment was done during the billing cycle.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param last_payment_date: The last_payment_date of this Statement.  # noqa: E501
         :type: str
@@ -514,7 +514,7 @@ class Statement(object):
     def last_payment_amount(self):
         """Gets the last_payment_amount of this Statement.  # noqa: E501
 
-        The last payment done for the previous billing cycle in the current statement period.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The last payment done for the previous billing cycle in the current statement period.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The last_payment_amount of this Statement.  # noqa: E501
         :rtype: Money
@@ -525,7 +525,7 @@ class Statement(object):
     def last_payment_amount(self, last_payment_amount):
         """Sets the last_payment_amount of this Statement.
 
-        The last payment done for the previous billing cycle in the current statement period.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        The last payment done for the previous billing cycle in the current statement period.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param last_payment_amount: The last_payment_amount of this Statement.  # noqa: E501
         :type: Money
@@ -537,7 +537,7 @@ class Statement(object):
     def id(self):
         """Gets the id of this Statement.  # noqa: E501
 
-        Unique identifier for the statement.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        Unique identifier for the statement.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The id of this Statement.  # noqa: E501
         :rtype: int
@@ -548,7 +548,7 @@ class Statement(object):
     def id(self, id):
         """Sets the id of this Statement.
 
-        Unique identifier for the statement.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        Unique identifier for the statement.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param id: The id of this Statement.  # noqa: E501
         :type: int
@@ -560,7 +560,7 @@ class Statement(object):
     def new_charges(self):
         """Gets the new_charges of this Statement.  # noqa: E501
 
-        New charges on the statement (i.e., charges since last statement to end of the billing period). Applicable to line of credit loan type.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        New charges on the statement (i.e., charges since last statement to end of the billing period). Applicable to line of credit loan type.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :return: The new_charges of this Statement.  # noqa: E501
         :rtype: Money
@@ -571,7 +571,7 @@ class Statement(object):
     def new_charges(self, new_charges):
         """Sets the new_charges of this Statement.
 
-        New charges on the statement (i.e., charges since last statement to end of the billing period). Applicable to line of credit loan type.<br><br><b>Applicable containers</b>: creditCard, bill, loan, insurance<br>  # noqa: E501
+        New charges on the statement (i.e., charges since last statement to end of the billing period). Applicable to line of credit loan type.<br><br><b>Applicable containers</b>: creditCard, loan, insurance<br>  # noqa: E501
 
         :param new_charges: The new_charges of this Statement.  # noqa: E501
         :type: Money

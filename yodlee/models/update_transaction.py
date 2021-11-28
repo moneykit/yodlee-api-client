@@ -3,7 +3,7 @@
 """
     Yodlee Core APIs
 
-    This file describes the Yodlee Platform APIs, using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. You can generate a client SDK for Python, Java, javascript, PHP or other languages according to your development needs. For more details about our APIs themselves, please refer to https://developer.yodlee.com/Yodlee_API/.  # noqa: E501
+    This file describes the Yodlee Platform APIs using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. Yodlee supports the Java SDK and it is available <a href=\"https://developer.yodlee.com/java-sdk-overview \">here</a>. You can generate a client SDK for Python, Java, JavaScript, PHP, or other languages according to your development needs. For more details about the APIs, refer to <a href=\"https://developer.yodlee.com/docs/api/1.1/Overview\">Yodlee API v1.1 - Overview</a>.<br><br>You will have to set the header before making the API call. The following headers apply to all the APIs:<ul><li>Authorization: This header holds the access token</li> <li> Api-Version: 1.1</li></ul><b>Note</b>: If there are any API-specific headers, they are mentioned explicitly in the respective API's description.  # noqa: E501
 
     OpenAPI spec version: 1.1.0
     Contact: developer@yodlee.com
@@ -35,20 +35,26 @@ class UpdateTransaction(object):
     swagger_types = {
         'category_source': 'str',
         'container': 'str',
+        'is_physical': 'bool',
+        'detail_category_id': 'int',
         'description': 'Description',
         'memo': 'str',
+        'merchant_type': 'str',
         'category_id': 'int'
     }
 
     attribute_map = {
         'category_source': 'categorySource',
         'container': 'container',
+        'is_physical': 'isPhysical',
+        'detail_category_id': 'detailCategoryId',
         'description': 'description',
         'memo': 'memo',
+        'merchant_type': 'merchantType',
         'category_id': 'categoryId'
     }
 
-    def __init__(self, category_source=None, container=None, description=None, memo=None, category_id=None, _configuration=None):  # noqa: E501
+    def __init__(self, category_source=None, container=None, is_physical=None, detail_category_id=None, description=None, memo=None, merchant_type=None, category_id=None, _configuration=None):  # noqa: E501
         """UpdateTransaction - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
@@ -56,17 +62,26 @@ class UpdateTransaction(object):
 
         self._category_source = None
         self._container = None
+        self._is_physical = None
+        self._detail_category_id = None
         self._description = None
         self._memo = None
+        self._merchant_type = None
         self._category_id = None
         self.discriminator = None
 
         self.category_source = category_source
         self.container = container
+        if is_physical is not None:
+            self.is_physical = is_physical
+        if detail_category_id is not None:
+            self.detail_category_id = detail_category_id
         if description is not None:
             self.description = description
         if memo is not None:
             self.memo = memo
+        if merchant_type is not None:
+            self.merchant_type = merchant_type
         self.category_id = category_id
 
     @property
@@ -130,6 +145,48 @@ class UpdateTransaction(object):
         self._container = container
 
     @property
+    def is_physical(self):
+        """Gets the is_physical of this UpdateTransaction.  # noqa: E501
+
+
+        :return: The is_physical of this UpdateTransaction.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_physical
+
+    @is_physical.setter
+    def is_physical(self, is_physical):
+        """Sets the is_physical of this UpdateTransaction.
+
+
+        :param is_physical: The is_physical of this UpdateTransaction.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_physical = is_physical
+
+    @property
+    def detail_category_id(self):
+        """Gets the detail_category_id of this UpdateTransaction.  # noqa: E501
+
+
+        :return: The detail_category_id of this UpdateTransaction.  # noqa: E501
+        :rtype: int
+        """
+        return self._detail_category_id
+
+    @detail_category_id.setter
+    def detail_category_id(self, detail_category_id):
+        """Sets the detail_category_id of this UpdateTransaction.
+
+
+        :param detail_category_id: The detail_category_id of this UpdateTransaction.  # noqa: E501
+        :type: int
+        """
+
+        self._detail_category_id = detail_category_id
+
+    @property
     def description(self):
         """Gets the description of this UpdateTransaction.  # noqa: E501
 
@@ -170,6 +227,34 @@ class UpdateTransaction(object):
         """
 
         self._memo = memo
+
+    @property
+    def merchant_type(self):
+        """Gets the merchant_type of this UpdateTransaction.  # noqa: E501
+
+
+        :return: The merchant_type of this UpdateTransaction.  # noqa: E501
+        :rtype: str
+        """
+        return self._merchant_type
+
+    @merchant_type.setter
+    def merchant_type(self, merchant_type):
+        """Sets the merchant_type of this UpdateTransaction.
+
+
+        :param merchant_type: The merchant_type of this UpdateTransaction.  # noqa: E501
+        :type: str
+        """
+        allowed_values = ["BILLERS", "SUBSCRIPTION", "OTHERS"]  # noqa: E501
+        if (self._configuration.client_side_validation and
+                merchant_type not in allowed_values):
+            raise ValueError(
+                "Invalid value for `merchant_type` ({0}), must be one of {1}"  # noqa: E501
+                .format(merchant_type, allowed_values)
+            )
+
+        self._merchant_type = merchant_type
 
     @property
     def category_id(self):

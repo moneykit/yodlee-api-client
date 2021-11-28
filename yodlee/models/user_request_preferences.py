@@ -3,7 +3,7 @@
 """
     Yodlee Core APIs
 
-    This file describes the Yodlee Platform APIs, using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. You can generate a client SDK for Python, Java, javascript, PHP or other languages according to your development needs. For more details about our APIs themselves, please refer to https://developer.yodlee.com/Yodlee_API/.  # noqa: E501
+    This file describes the Yodlee Platform APIs using the swagger notation. You can use this swagger file to generate client side SDKs to the Yodlee Platform APIs for many different programming languages. Yodlee supports the Java SDK and it is available <a href=\"https://developer.yodlee.com/java-sdk-overview \">here</a>. You can generate a client SDK for Python, Java, JavaScript, PHP, or other languages according to your development needs. For more details about the APIs, refer to <a href=\"https://developer.yodlee.com/docs/api/1.1/Overview\">Yodlee API v1.1 - Overview</a>.<br><br>You will have to set the header before making the API call. The following headers apply to all the APIs:<ul><li>Authorization: This header holds the access token</li> <li> Api-Version: 1.1</li></ul><b>Note</b>: If there are any API-specific headers, they are mentioned explicitly in the respective API's description.  # noqa: E501
 
     OpenAPI spec version: 1.1.0
     Contact: developer@yodlee.com
@@ -145,7 +145,7 @@ class UserRequestPreferences(object):
         :param currency: The currency of this UserRequestPreferences.  # noqa: E501
         :type: str
         """
-        allowed_values = ["AUD", "BRL", "CAD", "EUR", "GBP", "HKD", "IDR", "INR", "JPY", "NZD", "SGD", "USD", "ZAR", "CNY", "VND", "MYR", "CHF"]  # noqa: E501
+        allowed_values = ["USD", "AUD", "BRL", "CAD", "EUR", "GBP", "HKD", "IDR", "INR", "JPY", "NZD", "SGD", "ZAR", "CNY", "VND", "MYR", "CHF", "AED", "AFA", "ALL", "AMD", "ANG", "AOA", "ARS", "AWG", "AZM", "BAM", "BBD", "BDT", "BGL", "BHD", "BIF", "BMD", "BND", "BOB", "BSD", "BTN", "BWP", "BYR", "BZD", "CDF", "CLP", "COP", "CRC", "CUP", "CVE", "CYP", "CZK", "DJF", "DKK", "DOP", "DZD", "EEK", "EGP", "ERN", "ETB", "FJD", "FKP", "GEL", "GGP", "GHC", "GIP", "GMD", "GNF", "GTQ", "GYD", "HNL", "HRK", "HTG", "HUF", "ILS", "IMP", "IQD", "IRR", "ISK", "JEP", "JMD", "JOD", "KES", "KGS", "KHR", "KMF", "KPW", "KRW", "KWD", "KYD", "KZT", "LAK", "LBP", "LKR", "LRD", "LSL", "LTL", "LVL", "LYD", "MAD", "MDL", "MGF", "MKD", "MMK", "MNT", "MOP", "MRO", "MTL", "MUR", "MVR", "MWK", "MXN", "MZM", "NAD", "NGN", "NIO", "NOK", "NPR", "OMR", "PAB", "PEN", "PGK", "PHP", "PKR", "PLN", "PYG", "QAR", "ROL", "RUR", "RWF", "SAR", "SBD", "SCR", "SDD", "SEK", "SHP", "SIT", "SKK", "SLL", "SOS", "SPL", "SRG", "STD", "SVC", "SYP", "SZL", "THB", "TJR", "TMM", "TND", "TOP", "TRL", "TTD", "TVD", "TWD", "TZS", "UAH", "UGX", "UYU", "UZS", "VEB", "VUV", "WST", "XAF", "XAG", "XAU", "XCD", "XDR", "XOF", "XPD", "XPF", "XPT", "YER", "YUM", "ZMK", "ZWD", "ADP", "ATS", "BEF", "BUK", "CSD", "CSK", "DDM", "DEM", "ECS", "ESP", "FIM", "GRD", "GWP", "IEP", "ITL", "LUF", "MLF", "NLG", "PTE", "SUR", "TPE", "UAK", "XBA", "XBB", "XBC", "XBD", "XEU", "XFO", "XFU", "XGF", "XMK", "XRM", "XTS", "YDD", "YUD", "ZRN", "TJS", "RON", "BGN", "BTC", "XBT", "CNH", "RUB", "TRY", "GHS", "TMT", "ZMW", "VEF", "SSP", "ALK"]  # noqa: E501
         if (self._configuration.client_side_validation and
                 currency not in allowed_values):
             raise ValueError(
@@ -175,7 +175,7 @@ class UserRequestPreferences(object):
         :param locale: The locale of this UserRequestPreferences.  # noqa: E501
         :type: str
         """
-        allowed_values = ["en_US", "en_ES", "fr_CA", "zh_CN"]  # noqa: E501
+        allowed_values = ["en_US", "en_AN", "en_GB", "en_AU", "en_BE", "zh_CN", "en_IN", "en_CA", "en_ES", "en_NZ", "en_IE", "en_IL", "en_FR", "en_AE", "en_FJ", "en_GU", "en_HK", "en_IT", "en_JP", "en_KH", "en_KP", "en_KR", "en_MY", "en_PG", "en_PH", "en_SB", "en_SG", "en_TH", "en_TO", "en_VN", "en_VU", "en_WS", "es_ES", "fr_CA", "fr_FR", "nl_AN", "en_CH", "en_ZA", "en_CN", "en_FI", "en_AT", "de_AT", "en_DE", "de_DE", "de_RU", "en_ID", "en_MX", "es_MX", "en_PT", "en_SE", "en_GLOBAL", "pt_BR", "en_DK", "en_BR", "en_BM", "en_CK", "en_CO", "en_JE", "en_BG", "en_BW", "en_MW", "en_KE", "en_SZ", "en_ZW", "en_NL", "nl_NL"]  # noqa: E501
         if (self._configuration.client_side_validation and
                 locale not in allowed_values):
             raise ValueError(
