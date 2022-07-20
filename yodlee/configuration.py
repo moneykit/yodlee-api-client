@@ -96,8 +96,9 @@ class Configuration(object):
         # Safe chars for path_param
         self.safe_chars_for_path_param = ''
 
-        # Disable client side validation
-        self.client_side_validation = True
+        # JH: Manually edited
+        # Default to False as response definitions to not match the actual responses, which causes errors.
+        self.client_side_validation = False
 
     @classmethod
     def set_default(cls, default):
