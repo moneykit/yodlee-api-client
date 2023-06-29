@@ -1,5 +1,6 @@
 # UpdateConfigsNotificationEvent
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

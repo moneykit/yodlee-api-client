@@ -1,5 +1,6 @@
 # Coordinates
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

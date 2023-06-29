@@ -1,5 +1,6 @@
 # CobrandSession
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,5 +1,6 @@
 # UpdateTransaction
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

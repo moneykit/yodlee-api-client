@@ -1,5 +1,6 @@
 # VerificationBankTransferCode
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

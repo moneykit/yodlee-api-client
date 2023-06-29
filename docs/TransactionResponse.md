@@ -1,9 +1,10 @@
 # TransactionResponse
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**transaction** | [**list[Transaction]**](Transaction.md) |  | [optional] 
+**transaction** | [**list[Transaction]**](Transaction.md) |  | [optional] [readonly] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

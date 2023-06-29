@@ -1,5 +1,6 @@
 # ClientCredentialTokenResponse
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

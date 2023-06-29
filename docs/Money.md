@@ -1,10 +1,13 @@
 # Money
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **amount** | **float** |  | 
-**currency** | **str** |  | 
+**converted_amount** | **float** |  | [optional] 
+**currency** | **str** |  | [optional] 
+**converted_currency** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

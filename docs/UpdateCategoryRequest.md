@@ -1,5 +1,6 @@
 # UpdateCategoryRequest
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

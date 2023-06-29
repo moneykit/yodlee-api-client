@@ -1,5 +1,6 @@
 # VerifyAccount
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

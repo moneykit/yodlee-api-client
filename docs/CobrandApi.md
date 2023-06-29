@@ -1,6 +1,6 @@
 # yodlee.CobrandApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,23 +21,32 @@ Cobrand Login
 The cobrand login service authenticates a cobrand.<br>Cobrand session in the response includes the cobrand session token (cobSession) <br>which is used in subsequent API calls like registering or signing in the user. <br>The idle timeout for a cobrand session is 2 hours and the absolute timeout is 24 hours. This service can be <br>invoked to create a new cobrand session token. <br><b>Note:</b> This endpoint is deprecated for customers using the API Key-based authentication and is applicable only to customers who use the SAML-based authentication.<br>The content type has to be passed as application/json for the body parameter. <br>
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
 import yodlee
 from yodlee.rest import ApiException
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = yodlee.Configuration(
+    host = "http://localhost"
+)
 
-# create an instance of the API class
-api_instance = yodlee.CobrandApi()
-cobrand_login_request = yodlee.CobrandLoginRequest() # CobrandLoginRequest | cobrandLoginRequest
 
-try:
-    # Cobrand Login
-    api_response = api_instance.cobrand_login(cobrand_login_request)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CobrandApi->cobrand_login: %s\n" % e)
+# Enter a context with an instance of the API client
+with yodlee.ApiClient() as api_client:
+    # Create an instance of the API class
+    api_instance = yodlee.CobrandApi(api_client)
+    cobrand_login_request = yodlee.CobrandLoginRequest() # CobrandLoginRequest | cobrandLoginRequest
+
+    try:
+        # Cobrand Login
+        api_response = api_instance.cobrand_login(cobrand_login_request)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling CobrandApi->cobrand_login: %s\n" % e)
 ```
 
 ### Parameters
@@ -59,6 +68,14 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json;charset=UTF-8
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Y800 : Invalid value for cobrandParam |  -  |
+**401** | Y003 : Account is locked, contact Yodlee customer care&lt;br&gt;Y001 : User name and password required |  -  |
+**404** | Not Found |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **cobrand_logout**
@@ -69,21 +86,30 @@ Cobrand Logout
 The cobrand logout service is used to log out the cobrand.<br>This service does not return a response. The HTTP response code is 204 (Success with no content).<br><b>Note:</b> This endpoint is deprecated for customers using the API Key-based authentication and is applicable only to customers who use the SAML-based authentication.<br>
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
 import yodlee
 from yodlee.rest import ApiException
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = yodlee.Configuration(
+    host = "http://localhost"
+)
 
-# create an instance of the API class
-api_instance = yodlee.CobrandApi()
 
-try:
-    # Cobrand Logout
-    api_instance.cobrand_logout()
-except ApiException as e:
-    print("Exception when calling CobrandApi->cobrand_logout: %s\n" % e)
+# Enter a context with an instance of the API client
+with yodlee.ApiClient() as api_client:
+    # Create an instance of the API class
+    api_instance = yodlee.CobrandApi(api_client)
+    
+    try:
+        # Cobrand Logout
+        api_instance.cobrand_logout()
+    except ApiException as e:
+        print("Exception when calling CobrandApi->cobrand_logout: %s\n" % e)
 ```
 
 ### Parameters
@@ -99,8 +125,15 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json;charset=UTF-8
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**401** | Unauthorized |  -  |
+**204** | Logout successful |  -  |
+**404** | Not Found |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -112,23 +145,32 @@ Subscribe Event
 <b>Refer POST /configs/notifications/events/{eventName}.</b><br>The subscribe events service is used to subscribe to an event for receiving notifications.<br>The callback URL, where the notification will be posted should be provided to this service.<br>If the callback URL is invalid or inaccessible, the subscription will be unsuccessful, and an error will be thrown.<br>Customers can subscribe to REFRESH,DATA_UPDATES and AUTO_REFRESH_UPDATES event.<br><br><b>Notes</b>:<br>This service is not available in developer sandbox/test environment and will be made available for testing in your dedicated environment, once the contract is signed.<br>The content type has to be passed as application/json for the body parameter.<br>
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
 import yodlee
 from yodlee.rest import ApiException
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = yodlee.Configuration(
+    host = "http://localhost"
+)
 
-# create an instance of the API class
-api_instance = yodlee.CobrandApi()
-event_name = 'event_name_example' # str | eventName
+
+# Enter a context with an instance of the API client
+with yodlee.ApiClient() as api_client:
+    # Create an instance of the API class
+    api_instance = yodlee.CobrandApi(api_client)
+    event_name = 'event_name_example' # str | eventName
 event_request = yodlee.CreateCobrandNotificationEventRequest() # CreateCobrandNotificationEventRequest | eventRequest
 
-try:
-    # Subscribe Event
-    api_instance.create_subscription_event(event_name, event_request)
-except ApiException as e:
-    print("Exception when calling CobrandApi->create_subscription_event: %s\n" % e)
+    try:
+        # Subscribe Event
+        api_instance.create_subscription_event(event_name, event_request)
+    except ApiException as e:
+        print("Exception when calling CobrandApi->create_subscription_event: %s\n" % e)
 ```
 
 ### Parameters
@@ -151,6 +193,14 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json;charset=UTF-8
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**201** | OK |  -  |
+**400** | Y803 : eventName required&lt;br&gt;Y803 : callbackUrl required&lt;br&gt;Y800 : Invalid value for callbackUrl |  -  |
+**401** | Unauthorized |  -  |
+**404** | Not Found |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_subscribed_event**
@@ -161,22 +211,31 @@ Delete Subscription
 <b>Refer DELETE /configs/notifications/events/{eventName}.</b><br>The delete events service is used to unsubscribe from an events service.<br>
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
 import yodlee
 from yodlee.rest import ApiException
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = yodlee.Configuration(
+    host = "http://localhost"
+)
 
-# create an instance of the API class
-api_instance = yodlee.CobrandApi()
-event_name = 'event_name_example' # str | eventName
 
-try:
-    # Delete Subscription
-    api_instance.delete_subscribed_event(event_name)
-except ApiException as e:
-    print("Exception when calling CobrandApi->delete_subscribed_event: %s\n" % e)
+# Enter a context with an instance of the API client
+with yodlee.ApiClient() as api_client:
+    # Create an instance of the API class
+    api_instance = yodlee.CobrandApi(api_client)
+    event_name = 'event_name_example' # str | eventName
+
+    try:
+        # Delete Subscription
+        api_instance.delete_subscribed_event(event_name)
+    except ApiException as e:
+        print("Exception when calling CobrandApi->delete_subscribed_event: %s\n" % e)
 ```
 
 ### Parameters
@@ -198,6 +257,14 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json;charset=UTF-8
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**400** | Y803 : eventName required |  -  |
+**401** | Unauthorized |  -  |
+**204** | OK |  -  |
+**404** | Not Found |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_public_key**
@@ -208,22 +275,31 @@ Get Public Key
 <b>Refer GET /configs/publicKey.</b><br>The get public key service provides the customer the public key that should be used to encrypt the user credentials before sending it to Yodlee.<br>This endpoint is useful only for PKI enabled.<br>
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
 import yodlee
 from yodlee.rest import ApiException
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = yodlee.Configuration(
+    host = "http://localhost"
+)
 
-# create an instance of the API class
-api_instance = yodlee.CobrandApi()
 
-try:
-    # Get Public Key
-    api_response = api_instance.get_public_key()
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CobrandApi->get_public_key: %s\n" % e)
+# Enter a context with an instance of the API client
+with yodlee.ApiClient() as api_client:
+    # Create an instance of the API class
+    api_instance = yodlee.CobrandApi(api_client)
+    
+    try:
+        # Get Public Key
+        api_response = api_instance.get_public_key()
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling CobrandApi->get_public_key: %s\n" % e)
 ```
 
 ### Parameters
@@ -242,6 +318,13 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json;charset=UTF-8
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**401** | Unauthorized |  -  |
+**404** | Not Found |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_subscribed_events**
@@ -252,23 +335,32 @@ Get Subscribed Events
 <b>Refer GET /configs/notifications/events.</b><br>The get events service provides the list of events for which consumers subscribed <br>to receive notifications. <br>
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
 import yodlee
 from yodlee.rest import ApiException
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = yodlee.Configuration(
+    host = "http://localhost"
+)
 
-# create an instance of the API class
-api_instance = yodlee.CobrandApi()
-event_name = 'event_name_example' # str | eventName (optional)
 
-try:
-    # Get Subscribed Events
-    api_response = api_instance.get_subscribed_events(event_name=event_name)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CobrandApi->get_subscribed_events: %s\n" % e)
+# Enter a context with an instance of the API client
+with yodlee.ApiClient() as api_client:
+    # Create an instance of the API class
+    api_instance = yodlee.CobrandApi(api_client)
+    event_name = 'event_name_example' # str | eventName (optional)
+
+    try:
+        # Get Subscribed Events
+        api_response = api_instance.get_subscribed_events(event_name=event_name)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling CobrandApi->get_subscribed_events: %s\n" % e)
 ```
 
 ### Parameters
@@ -290,6 +382,13 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json;charset=UTF-8
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**401** | Unauthorized |  -  |
+**404** | Not Found |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_subscribed_event**
@@ -300,23 +399,32 @@ Update Subscription
 <b>Refer PUT /configs/notifications/events/{eventName}.</b><br>The update events service is used to update the callback URL.<br>If the callback URL is invalid or inaccessible, the subscription will be unsuccessful, and an error will be thrown.<br><b>Note:</b> The content type has to be passed as application/json for the body parameter. <br>
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
 import yodlee
 from yodlee.rest import ApiException
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = yodlee.Configuration(
+    host = "http://localhost"
+)
 
-# create an instance of the API class
-api_instance = yodlee.CobrandApi()
-event_name = 'event_name_example' # str | eventName
+
+# Enter a context with an instance of the API client
+with yodlee.ApiClient() as api_client:
+    # Create an instance of the API class
+    api_instance = yodlee.CobrandApi(api_client)
+    event_name = 'event_name_example' # str | eventName
 event_request = yodlee.UpdateCobrandNotificationEventRequest() # UpdateCobrandNotificationEventRequest | eventRequest
 
-try:
-    # Update Subscription
-    api_instance.update_subscribed_event(event_name, event_request)
-except ApiException as e:
-    print("Exception when calling CobrandApi->update_subscribed_event: %s\n" % e)
+    try:
+        # Update Subscription
+        api_instance.update_subscribed_event(event_name, event_request)
+    except ApiException as e:
+        print("Exception when calling CobrandApi->update_subscribed_event: %s\n" % e)
 ```
 
 ### Parameters
@@ -338,6 +446,14 @@ No authorization required
 
  - **Content-Type**: application/json
  - **Accept**: application/json;charset=UTF-8
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**400** | Y803 : eventName required&lt;br&gt;Y803 : callbackUrl required&lt;br&gt;Y800 : Invalid value for callbackUrl |  -  |
+**401** | Unauthorized |  -  |
+**204** | OK |  -  |
+**404** | Not Found |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

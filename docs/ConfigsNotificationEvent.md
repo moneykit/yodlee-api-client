@@ -1,5 +1,6 @@
 # ConfigsNotificationEvent
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

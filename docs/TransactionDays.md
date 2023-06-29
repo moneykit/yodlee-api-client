@@ -1,5 +1,6 @@
 # TransactionDays
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

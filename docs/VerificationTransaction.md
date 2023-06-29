@@ -1,5 +1,6 @@
 # VerificationTransaction
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,5 +1,6 @@
 # CreateConfigsNotificationEventRequest
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,5 +1,6 @@
 # ProvidersCount
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

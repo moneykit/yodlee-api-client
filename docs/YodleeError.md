@@ -1,5 +1,6 @@
 # YodleeError
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

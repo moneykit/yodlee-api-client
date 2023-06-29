@@ -1,10 +1,12 @@
 # UpdateUserRegistration
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **preferences** | [**UserRequestPreferences**](UserRequestPreferences.md) |  | [optional] 
 **address** | [**UserAddress**](UserAddress.md) |  | [optional] 
+**phone_number** | **str** |  | [optional] 
 **name** | [**Name**](Name.md) |  | [optional] 
 **email** | **str** |  | [optional] 
 **segment_name** | **str** |  | [optional] 

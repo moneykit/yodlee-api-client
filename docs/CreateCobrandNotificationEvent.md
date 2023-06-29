@@ -1,5 +1,6 @@
 # CreateCobrandNotificationEvent
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

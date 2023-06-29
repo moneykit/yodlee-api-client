@@ -1,5 +1,6 @@
 # UserDetailResponse
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

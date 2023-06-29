@@ -1,5 +1,6 @@
 # VerificationRequest
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,5 +1,6 @@
 # UpdateAccountInfo
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -14,6 +15,7 @@ Name | Type | Description | Notes
 **frequency** | **str** |  | [optional] 
 **account_status** | **str** |  | [optional] 
 **amount_due** | [**Money**](Money.md) |  | [optional] 
+**linked_account_ids** | **list[int]** | List of loan accounts to which a real-estate account is linked. | [optional] 
 **balance** | [**Money**](Money.md) |  | [optional] 
 **is_ebill_enrolled** | **str** |  | [optional] 
 **nickname** | **str** |  | [optional] 
