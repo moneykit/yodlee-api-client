@@ -1,0 +1,3 @@
+- yodlee/configuration.py: Disable client validation
+- swagger.yaml:
+    - `/providerAccounts:` add in missing 201 response shape. They document a 200 but receiving a 201.

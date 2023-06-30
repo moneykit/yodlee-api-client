@@ -896,6 +896,7 @@ class ProviderAccountsApi(object):
 
         response_types_map = {
             200: "AddedProviderAccountResponse",
+            201: "AddedProviderAccountResponse",
             400: "YodleeError",
             401: None,
             404: None,

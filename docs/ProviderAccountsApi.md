@@ -404,6 +404,7 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
+**201** | OK |  -  |
 **400** | Y803 : providerId is mandatory&lt;br&gt;Y803 : Invalid value for credentialsParam&lt;br&gt;Y400 : id and value in credentialsParam are mandatory&lt;br&gt;Y901 : Service not supported |  -  |
 **401** | Unauthorized |  -  |
 **404** | Not Found |  -  |
